@@ -5,3 +5,6 @@ const Moltin = MoltinGateway({
 })
 
 export const getProducts = () => Moltin.Products.With('main_image').All()
+
+export const getProductById = id => Moltin.Products.With('main_image').Get(id)
+
