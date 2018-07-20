@@ -3,7 +3,6 @@ import { getProductById } from '../lib/moltin'
 import ProductSummary from '../components/ProductSummary'
 import ProductAttributes from '../components/ProductAttributes'
 
-
 const productPage = ({product}) => (
     <Layout title={product.name}>
         <ProductSummary {...product} />
@@ -24,7 +23,7 @@ productPage.getInitialProps = async ({ query: {id} }) => {
             image: imageId ? main_images.find(img => img.id === imageId).link.href 
             : '/static/amazon-artificial-intelligence.svg'
         
-     }
+    }
   }
 }
 export default productPage 

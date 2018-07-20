@@ -146,7 +146,7 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
 
 /* unused harmony default export */ var _unused_webpack_default_export = (function (_ref) {
   var description = _ref.description,
-      S3 = _ref.S3;
+      Sample = _ref.Sample;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
@@ -205,12 +205,12 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
       fileName: _jsxFileName,
       lineNumber: 22
     }
-  }, "S3"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["h" /* Table */].Cell, {
+  }, "Sample"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["h" /* Table */].Cell, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     }
-  }, S3)))));
+  }, Sample)))));
 });
 
 /***/ }),
@@ -53033,7 +53033,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_moltin__ = __webpack_require__("./lib/moltin.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_ProductSummary__ = __webpack_require__("./components/ProductSummary.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_ProductAttributes__ = __webpack_require__("./components/ProductAttributes.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_ProductAttributes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_ProductAttributes__);
 
 var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/pages/product.js";
 
@@ -53057,17 +53056,17 @@ var productPage = function productPage(_ref) {
     title: product.name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     }
   }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_ProductSummary__["a" /* default */], _extends({}, product, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     }
   })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ProductDescription, _extends({}, product, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     }
   })));
 };
