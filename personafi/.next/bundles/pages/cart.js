@@ -21,7 +21,7 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
       removeFromCart = _ref.removeFromCart,
       loading = _ref.loading,
       completed = _ref.completed;
-  if (loading) return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Loader */], {
+  if (loading) return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Loader */], {
     active: true,
     inline: "centered",
     __source: {
@@ -29,13 +29,13 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
       lineNumber: 5
     }
   });
-  if (completed) return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Message */], {
+  if (completed) return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Message */], {
     success: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Message */].Header, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Message */].Header, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -48,13 +48,13 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
   }, "Congratulations! Your order is on its way"));
 
   if (items.length === 0) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Message */], {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Message */], {
       warning: true,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17
       }
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["h" /* Message */].Header, {
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["k" /* Message */].Header, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18
@@ -84,7 +84,7 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
             fileName: _jsxFileName,
             lineNumber: 30
           }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Item */].Header, {
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Item */].Header, {
           as: "a",
           __source: {
             fileName: _jsxFileName,
@@ -108,7 +108,7 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
     });
   };
 
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Item */].Group, {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["g" /* Item */].Group, {
     divided: true,
     items: mapCartItemsToItems(items),
     __source: {
@@ -126,12 +126,14 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-throw new Error("Cannot find module \"react-stripe-checkout\"");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout__ = __webpack_require__("./node_modules/react-stripe-checkout/dist/main.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
 var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/CartSummary.js";
 
 
 
+var stripeKey = 'pk_test_TQFCOtxleoeIjE9QXzRL9Xla';
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
   var _ref$display_price$wi = _ref.display_price.with_tax,
       currency = _ref$display_price$wi.currency,
@@ -140,33 +142,235 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["c" /* Divider */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["i" /* Segment */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["l" /* Segment */], {
     clearing: true,
     size: "large",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     }
-  }, "Sub Total:"), " ", formatted, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */], {
+  }, "Sub Total:"), " ", formatted, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout___default.a, {
+    name: "Personafi Marketplace",
+    amount: amount,
+    currency: currency,
+    stripeKey: stripeKey,
+    shippingAddress: false,
+    billingAddress: true,
+    zipCode: true,
+    token: handleCheckout,
+    reconfigureOnUpdate: false,
+    triggerEvent: "onClick",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["a" /* Button */], {
     color: "black",
     floated: "right",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 25
+    }
+  }, "Check Out"))));
+});
+
+/***/ }),
+
+/***/ "./components/Header.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("./node_modules/next/link.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head__ = __webpack_require__("./node_modules/next/head.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router__ = __webpack_require__("./node_modules/next/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_router__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_nprogress__ = __webpack_require__("./node_modules/nprogress/nprogress.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_nprogress___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_nprogress__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
+var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Header.js";
+
+
+
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeStart = function (url) {
+  return __WEBPACK_IMPORTED_MODULE_4_nprogress___default.a.start();
+};
+
+__WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeComplete = function (url) {
+  return __WEBPACK_IMPORTED_MODULE_4_nprogress___default.a.done();
+};
+
+__WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = function (url) {
+  return __WEBPACK_IMPORTED_MODULE_4_nprogress___default.a.done();
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_head___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
+    rel: "stylesheet",
+    type: "text/css",
+    href: "/static/nprogress.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["j" /* Menu */], {
+    inverted: true,
+    fixed: "top",
+    size: "huge",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["b" /* Container */], {
+    text: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+    href: "/",
+    prefetch: true,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["j" /* Menu */].Item, {
+    as: "a",
+    header: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["e" /* Image */], {
+    size: "mini",
+    src: "/static/amazon-artificial-intelligence.svg",
+    style: {
+      marginRight: '1.5em'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }), "Personafi Marketplace")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+    href: "/cart",
+    prefetch: true,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["j" /* Menu */].Item, {
+    position: "right",
+    as: "a",
+    header: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    }
+  }, "Cart")))));
+});
+
+/***/ }),
+
+/***/ "./components/Layout.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head__ = __webpack_require__("./node_modules/next/head.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_head__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__("./components/Header.js");
+var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Layout.js";
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  var children = _ref.children,
+      _ref$title = _ref.title,
+      title = _ref$title === void 0 ? '' : _ref$title;
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
+    charSet: "utf-8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
+    rel: "stylesheet",
+    href: "//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 11
     }
-  }, "Check Out")));
+  }, title)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Header__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["b" /* Container */], {
+    text: true,
+    style: {
+      paddingTop: '7em'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, children));
 });
 
 /***/ }),
@@ -175,11 +379,11 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getProducts; });
-/* unused harmony export getProductById */
-/* unused harmony export addToCart */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
+/* unused harmony export getProducts */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getProductById; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addToCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getCartItems; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return removeFromCart; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk__ = __webpack_require__("./node_modules/@moltin/sdk/dist/moltin.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__moltin_sdk__);
 
@@ -21534,10 +21738,26 @@ var warnLink = (0, _utils.execOnce)(_utils.warn);
 
 /***/ }),
 
+/***/ "./node_modules/next/head.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./node_modules/next/dist/lib/head.js")
+
+
+/***/ }),
+
 /***/ "./node_modules/next/link.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./node_modules/next/dist/lib/link.js")
+
+
+/***/ }),
+
+/***/ "./node_modules/next/router.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./node_modules/next/dist/lib/router/index.js")
 
 
 /***/ }),
@@ -21871,6 +22091,493 @@ module.exports = __webpack_require__("./node_modules/next/dist/lib/link.js")
 }).call(this);
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/nprogress/nprogress.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
+ * @license MIT */
+
+;(function(root, factory) {
+
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if (typeof exports === 'object') {
+    module.exports = factory();
+  } else {
+    root.NProgress = factory();
+  }
+
+})(this, function() {
+  var NProgress = {};
+
+  NProgress.version = '0.2.0';
+
+  var Settings = NProgress.settings = {
+    minimum: 0.08,
+    easing: 'ease',
+    positionUsing: '',
+    speed: 200,
+    trickle: true,
+    trickleRate: 0.02,
+    trickleSpeed: 800,
+    showSpinner: true,
+    barSelector: '[role="bar"]',
+    spinnerSelector: '[role="spinner"]',
+    parent: 'body',
+    template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+  };
+
+  /**
+   * Updates configuration.
+   *
+   *     NProgress.configure({
+   *       minimum: 0.1
+   *     });
+   */
+  NProgress.configure = function(options) {
+    var key, value;
+    for (key in options) {
+      value = options[key];
+      if (value !== undefined && options.hasOwnProperty(key)) Settings[key] = value;
+    }
+
+    return this;
+  };
+
+  /**
+   * Last number.
+   */
+
+  NProgress.status = null;
+
+  /**
+   * Sets the progress bar status, where `n` is a number from `0.0` to `1.0`.
+   *
+   *     NProgress.set(0.4);
+   *     NProgress.set(1.0);
+   */
+
+  NProgress.set = function(n) {
+    var started = NProgress.isStarted();
+
+    n = clamp(n, Settings.minimum, 1);
+    NProgress.status = (n === 1 ? null : n);
+
+    var progress = NProgress.render(!started),
+        bar      = progress.querySelector(Settings.barSelector),
+        speed    = Settings.speed,
+        ease     = Settings.easing;
+
+    progress.offsetWidth; /* Repaint */
+
+    queue(function(next) {
+      // Set positionUsing if it hasn't already been set
+      if (Settings.positionUsing === '') Settings.positionUsing = NProgress.getPositioningCSS();
+
+      // Add transition
+      css(bar, barPositionCSS(n, speed, ease));
+
+      if (n === 1) {
+        // Fade out
+        css(progress, { 
+          transition: 'none', 
+          opacity: 1 
+        });
+        progress.offsetWidth; /* Repaint */
+
+        setTimeout(function() {
+          css(progress, { 
+            transition: 'all ' + speed + 'ms linear', 
+            opacity: 0 
+          });
+          setTimeout(function() {
+            NProgress.remove();
+            next();
+          }, speed);
+        }, speed);
+      } else {
+        setTimeout(next, speed);
+      }
+    });
+
+    return this;
+  };
+
+  NProgress.isStarted = function() {
+    return typeof NProgress.status === 'number';
+  };
+
+  /**
+   * Shows the progress bar.
+   * This is the same as setting the status to 0%, except that it doesn't go backwards.
+   *
+   *     NProgress.start();
+   *
+   */
+  NProgress.start = function() {
+    if (!NProgress.status) NProgress.set(0);
+
+    var work = function() {
+      setTimeout(function() {
+        if (!NProgress.status) return;
+        NProgress.trickle();
+        work();
+      }, Settings.trickleSpeed);
+    };
+
+    if (Settings.trickle) work();
+
+    return this;
+  };
+
+  /**
+   * Hides the progress bar.
+   * This is the *sort of* the same as setting the status to 100%, with the
+   * difference being `done()` makes some placebo effect of some realistic motion.
+   *
+   *     NProgress.done();
+   *
+   * If `true` is passed, it will show the progress bar even if its hidden.
+   *
+   *     NProgress.done(true);
+   */
+
+  NProgress.done = function(force) {
+    if (!force && !NProgress.status) return this;
+
+    return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
+  };
+
+  /**
+   * Increments by a random amount.
+   */
+
+  NProgress.inc = function(amount) {
+    var n = NProgress.status;
+
+    if (!n) {
+      return NProgress.start();
+    } else {
+      if (typeof amount !== 'number') {
+        amount = (1 - n) * clamp(Math.random() * n, 0.1, 0.95);
+      }
+
+      n = clamp(n + amount, 0, 0.994);
+      return NProgress.set(n);
+    }
+  };
+
+  NProgress.trickle = function() {
+    return NProgress.inc(Math.random() * Settings.trickleRate);
+  };
+
+  /**
+   * Waits for all supplied jQuery promises and
+   * increases the progress as the promises resolve.
+   *
+   * @param $promise jQUery Promise
+   */
+  (function() {
+    var initial = 0, current = 0;
+
+    NProgress.promise = function($promise) {
+      if (!$promise || $promise.state() === "resolved") {
+        return this;
+      }
+
+      if (current === 0) {
+        NProgress.start();
+      }
+
+      initial++;
+      current++;
+
+      $promise.always(function() {
+        current--;
+        if (current === 0) {
+            initial = 0;
+            NProgress.done();
+        } else {
+            NProgress.set((initial - current) / initial);
+        }
+      });
+
+      return this;
+    };
+
+  })();
+
+  /**
+   * (Internal) renders the progress bar markup based on the `template`
+   * setting.
+   */
+
+  NProgress.render = function(fromStart) {
+    if (NProgress.isRendered()) return document.getElementById('nprogress');
+
+    addClass(document.documentElement, 'nprogress-busy');
+    
+    var progress = document.createElement('div');
+    progress.id = 'nprogress';
+    progress.innerHTML = Settings.template;
+
+    var bar      = progress.querySelector(Settings.barSelector),
+        perc     = fromStart ? '-100' : toBarPerc(NProgress.status || 0),
+        parent   = document.querySelector(Settings.parent),
+        spinner;
+    
+    css(bar, {
+      transition: 'all 0 linear',
+      transform: 'translate3d(' + perc + '%,0,0)'
+    });
+
+    if (!Settings.showSpinner) {
+      spinner = progress.querySelector(Settings.spinnerSelector);
+      spinner && removeElement(spinner);
+    }
+
+    if (parent != document.body) {
+      addClass(parent, 'nprogress-custom-parent');
+    }
+
+    parent.appendChild(progress);
+    return progress;
+  };
+
+  /**
+   * Removes the element. Opposite of render().
+   */
+
+  NProgress.remove = function() {
+    removeClass(document.documentElement, 'nprogress-busy');
+    removeClass(document.querySelector(Settings.parent), 'nprogress-custom-parent');
+    var progress = document.getElementById('nprogress');
+    progress && removeElement(progress);
+  };
+
+  /**
+   * Checks if the progress bar is rendered.
+   */
+
+  NProgress.isRendered = function() {
+    return !!document.getElementById('nprogress');
+  };
+
+  /**
+   * Determine which positioning CSS rule to use.
+   */
+
+  NProgress.getPositioningCSS = function() {
+    // Sniff on document.body.style
+    var bodyStyle = document.body.style;
+
+    // Sniff prefixes
+    var vendorPrefix = ('WebkitTransform' in bodyStyle) ? 'Webkit' :
+                       ('MozTransform' in bodyStyle) ? 'Moz' :
+                       ('msTransform' in bodyStyle) ? 'ms' :
+                       ('OTransform' in bodyStyle) ? 'O' : '';
+
+    if (vendorPrefix + 'Perspective' in bodyStyle) {
+      // Modern browsers with 3D support, e.g. Webkit, IE10
+      return 'translate3d';
+    } else if (vendorPrefix + 'Transform' in bodyStyle) {
+      // Browsers without 3D support, e.g. IE9
+      return 'translate';
+    } else {
+      // Browsers without translate() support, e.g. IE7-8
+      return 'margin';
+    }
+  };
+
+  /**
+   * Helpers
+   */
+
+  function clamp(n, min, max) {
+    if (n < min) return min;
+    if (n > max) return max;
+    return n;
+  }
+
+  /**
+   * (Internal) converts a percentage (`0..1`) to a bar translateX
+   * percentage (`-100%..0%`).
+   */
+
+  function toBarPerc(n) {
+    return (-1 + n) * 100;
+  }
+
+
+  /**
+   * (Internal) returns the correct CSS for changing the bar's
+   * position given an n percentage, and speed and ease from Settings
+   */
+
+  function barPositionCSS(n, speed, ease) {
+    var barCSS;
+
+    if (Settings.positionUsing === 'translate3d') {
+      barCSS = { transform: 'translate3d('+toBarPerc(n)+'%,0,0)' };
+    } else if (Settings.positionUsing === 'translate') {
+      barCSS = { transform: 'translate('+toBarPerc(n)+'%,0)' };
+    } else {
+      barCSS = { 'margin-left': toBarPerc(n)+'%' };
+    }
+
+    barCSS.transition = 'all '+speed+'ms '+ease;
+
+    return barCSS;
+  }
+
+  /**
+   * (Internal) Queues a function to be executed.
+   */
+
+  var queue = (function() {
+    var pending = [];
+    
+    function next() {
+      var fn = pending.shift();
+      if (fn) {
+        fn(next);
+      }
+    }
+
+    return function(fn) {
+      pending.push(fn);
+      if (pending.length == 1) next();
+    };
+  })();
+
+  /**
+   * (Internal) Applies css properties to an element, similar to the jQuery 
+   * css method.
+   *
+   * While this helper does assist with vendor prefixed property names, it 
+   * does not perform any manipulation of values prior to setting styles.
+   */
+
+  var css = (function() {
+    var cssPrefixes = [ 'Webkit', 'O', 'Moz', 'ms' ],
+        cssProps    = {};
+
+    function camelCase(string) {
+      return string.replace(/^-ms-/, 'ms-').replace(/-([\da-z])/gi, function(match, letter) {
+        return letter.toUpperCase();
+      });
+    }
+
+    function getVendorProp(name) {
+      var style = document.body.style;
+      if (name in style) return name;
+
+      var i = cssPrefixes.length,
+          capName = name.charAt(0).toUpperCase() + name.slice(1),
+          vendorName;
+      while (i--) {
+        vendorName = cssPrefixes[i] + capName;
+        if (vendorName in style) return vendorName;
+      }
+
+      return name;
+    }
+
+    function getStyleProp(name) {
+      name = camelCase(name);
+      return cssProps[name] || (cssProps[name] = getVendorProp(name));
+    }
+
+    function applyCss(element, prop, value) {
+      prop = getStyleProp(prop);
+      element.style[prop] = value;
+    }
+
+    return function(element, properties) {
+      var args = arguments,
+          prop, 
+          value;
+
+      if (args.length == 2) {
+        for (prop in properties) {
+          value = properties[prop];
+          if (value !== undefined && properties.hasOwnProperty(prop)) applyCss(element, prop, value);
+        }
+      } else {
+        applyCss(element, args[1], args[2]);
+      }
+    }
+  })();
+
+  /**
+   * (Internal) Determines if an element or space separated list of class names contains a class name.
+   */
+
+  function hasClass(element, name) {
+    var list = typeof element == 'string' ? element : classList(element);
+    return list.indexOf(' ' + name + ' ') >= 0;
+  }
+
+  /**
+   * (Internal) Adds a class to an element.
+   */
+
+  function addClass(element, name) {
+    var oldList = classList(element),
+        newList = oldList + name;
+
+    if (hasClass(oldList, name)) return; 
+
+    // Trim the opening space.
+    element.className = newList.substring(1);
+  }
+
+  /**
+   * (Internal) Removes a class from an element.
+   */
+
+  function removeClass(element, name) {
+    var oldList = classList(element),
+        newList;
+
+    if (!hasClass(element, name)) return;
+
+    // Replace the class name.
+    newList = oldList.replace(' ' + name + ' ', ' ');
+
+    // Trim the opening and closing spaces.
+    element.className = newList.substring(1, newList.length - 1);
+  }
+
+  /**
+   * (Internal) Gets a space separated list of the class names on the element. 
+   * The list is wrapped with a single space on each end to facilitate finding 
+   * matches within the list.
+   */
+
+  function classList(element) {
+    return (' ' + (element.className || '') + ' ').replace(/\s+/gi, ' ');
+  }
+
+  /**
+   * (Internal) Removes an element from the DOM.
+   */
+
+  function removeElement(element) {
+    element && element.parentNode && element.parentNode.removeChild(element);
+  }
+
+  return NProgress;
+});
+
+
 
 /***/ }),
 
@@ -22566,6 +23273,550 @@ function forbidExtraProps(propTypes) {
 }
 module.exports = exports['default'];
 //# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/react-stripe-checkout/dist/main.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__("./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var scriptLoading = false;
+var scriptLoaded = false;
+var scriptDidError = false;
+
+var ReactStripeCheckout = function (_React$Component) {
+  _inherits(ReactStripeCheckout, _React$Component);
+
+  function ReactStripeCheckout(props) {
+    _classCallCheck(this, ReactStripeCheckout);
+
+    var _this = _possibleConstructorReturn(this, (ReactStripeCheckout.__proto__ || Object.getPrototypeOf(ReactStripeCheckout)).call(this, props));
+
+    _this.onScriptLoaded = function () {
+      if (!ReactStripeCheckout.stripeHandler) {
+        ReactStripeCheckout.stripeHandler = StripeCheckout.configure({
+          key: _this.props.stripeKey
+        });
+        if (_this.hasPendingClick) {
+          _this.showStripeDialog();
+        }
+      }
+    };
+
+    _this.onScriptError = function () {
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      _this.hideLoadingDialog();
+      if (_this.props.onScriptError) {
+        _this.props.onScriptError.apply(_this, args);
+      }
+    };
+
+    _this.onClosed = function () {
+      for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      if (_this._isMounted) _this.setState({ open: false });
+      if (_this.props.closed) {
+        _this.props.closed.apply(_this, args);
+      }
+    };
+
+    _this.onOpened = function () {
+      for (var _len3 = arguments.length, args = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+        args[_key3] = arguments[_key3];
+      }
+
+      _this.setState({ open: true });
+      if (_this.props.opened) {
+        _this.props.opened.apply(_this, args);
+      }
+    };
+
+    _this.getConfig = function () {
+      return ['token', 'image', 'name', 'description', 'amount', 'locale', 'currency', 'panelLabel', 'zipCode', 'shippingAddress', 'billingAddress', 'email', 'allowRememberMe', 'bitcoin', 'alipay', 'alipayReusable'].reduce(function (config, key) {
+        return _extends({}, config, _this.props.hasOwnProperty(key) && _defineProperty({}, key, _this.props[key]));
+      }, {
+        opened: _this.onOpened,
+        closed: _this.onClosed
+      });
+    };
+
+    _this.onClick = function () {
+      // eslint-disable-line react/sort-comp
+      if (_this.props.disabled) {
+        return;
+      }
+
+      if (scriptDidError) {
+        try {
+          throw new Error('Tried to call onClick, but StripeCheckout failed to load');
+        } catch (x) {} // eslint-disable-line no-empty
+      } else if (ReactStripeCheckout.stripeHandler) {
+        _this.showStripeDialog();
+      } else {
+        _this.showLoadingDialog();
+        _this.hasPendingClick = true;
+      }
+    };
+
+    _this.handleOnMouseDown = function () {
+      _this.setState({
+        buttonActive: true
+      });
+    };
+
+    _this.handleOnMouseUp = function () {
+      _this.setState({
+        buttonActive: false
+      });
+    };
+
+    _this.state = {
+      open: false,
+      buttonActive: false
+    };
+    return _this;
+  }
+
+  _createClass(ReactStripeCheckout, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      this._isMounted = true;
+      if (scriptLoaded) {
+        return;
+      }
+
+      if (scriptLoading) {
+        return;
+      }
+
+      scriptLoading = true;
+
+      var script = document.createElement('script');
+      if (typeof this.props.onScriptTagCreated === 'function') {
+        this.props.onScriptTagCreated(script);
+      }
+
+      script.src = 'https://checkout.stripe.com/checkout.js';
+      script.async = 1;
+
+      this.loadPromise = function () {
+        var canceled = false;
+        var promise = new Promise(function (resolve, reject) {
+          script.onload = function () {
+            scriptLoaded = true;
+            scriptLoading = false;
+            resolve();
+            _this2.onScriptLoaded();
+          };
+          script.onerror = function (event) {
+            scriptDidError = true;
+            scriptLoading = false;
+            reject(event);
+            _this2.onScriptError(event);
+          };
+        });
+        var wrappedPromise = new Promise(function (accept, cancel) {
+          promise.then(function () {
+            return canceled ? cancel({ isCanceled: true }) : accept();
+          }); // eslint-disable-line no-confusing-arrow
+          promise.catch(function (error) {
+            return canceled ? cancel({ isCanceled: true }) : cancel(error);
+          }); // eslint-disable-line no-confusing-arrow
+        });
+
+        return {
+          promise: wrappedPromise,
+          cancel: function cancel() {
+            canceled = true;
+          }
+        };
+      }();
+
+      this.loadPromise.promise.then(this.onScriptLoaded).catch(this.onScriptError);
+
+      document.body.appendChild(script);
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      if (!scriptLoading) {
+        this.updateStripeHandler();
+      }
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      this._isMounted = false;
+      if (this.loadPromise) {
+        this.loadPromise.cancel();
+      }
+      if (ReactStripeCheckout.stripeHandler && this.state.open) {
+        ReactStripeCheckout.stripeHandler.close();
+      }
+    }
+  }, {
+    key: 'updateStripeHandler',
+    value: function updateStripeHandler() {
+      if (!ReactStripeCheckout.stripeHandler || this.props.reconfigureOnUpdate) {
+        ReactStripeCheckout.stripeHandler = StripeCheckout.configure({
+          key: this.props.stripeKey
+        });
+      }
+    }
+  }, {
+    key: 'showLoadingDialog',
+    value: function showLoadingDialog() {
+      if (this.props.showLoadingDialog) {
+        for (var _len4 = arguments.length, args = Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
+          args[_key4] = arguments[_key4];
+        }
+
+        this.props.showLoadingDialog.apply(this, args);
+      }
+    }
+  }, {
+    key: 'hideLoadingDialog',
+    value: function hideLoadingDialog() {
+      if (this.props.hideLoadingDialog) {
+        for (var _len5 = arguments.length, args = Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
+          args[_key5] = arguments[_key5];
+        }
+
+        this.props.hideLoadingDialog.apply(this, args);
+      }
+    }
+  }, {
+    key: 'showStripeDialog',
+    value: function showStripeDialog() {
+      this.hideLoadingDialog();
+      ReactStripeCheckout.stripeHandler.open(this.getConfig());
+    }
+  }, {
+    key: 'renderDefaultStripeButton',
+    value: function renderDefaultStripeButton() {
+      return _react2.default.createElement(
+        'button',
+        _extends({}, _defineProperty({}, this.props.triggerEvent, this.onClick), {
+          className: this.props.className,
+          onMouseDown: this.handleOnMouseDown,
+          onFocus: this.handleOnMouseDown,
+          onMouseUp: this.handleOnMouseUp,
+          onMouseOut: this.handleOnMouseUp,
+          onBlur: this.handleOnMouseUp,
+          style: _extends({}, {
+            overflow: 'hidden',
+            display: 'inline-block',
+            background: 'linear-gradient(#28a0e5,#015e94)',
+            border: 0,
+            padding: 1,
+            textDecoration: 'none',
+            borderRadius: 5,
+            boxShadow: '0 1px 0 rgba(0,0,0,0.2)',
+            cursor: 'pointer',
+            visibility: 'visible',
+            userSelect: 'none'
+          }, this.state.buttonActive && {
+            background: '#005d93'
+          }, this.props.style)
+        }),
+        _react2.default.createElement(
+          'span',
+          {
+            style: _extends({}, {
+              backgroundImage: 'linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4)',
+              fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
+              fontSize: 14,
+              position: 'relative',
+              padding: '0 12px',
+              display: 'block',
+              height: 30,
+              lineHeight: '30px',
+              color: '#fff',
+              fontWeight: 'bold',
+              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.25)',
+              textShadow: '0 -1px 0 rgba(0,0,0,0.25)',
+              borderRadius: 4
+            }, this.state.buttonActive && {
+              color: '#eee',
+              boxShadow: 'inset 0 1px 0 rgba(0,0,0,0.1)',
+              backgroundImage: 'linear-gradient(#008cdd,#008cdd 85%,#239adf)'
+            }, this.props.textStyle)
+          },
+          this.props.label
+        )
+      );
+    }
+  }, {
+    key: 'renderDisabledButton',
+    value: function renderDisabledButton() {
+      return _react2.default.createElement(
+        'button',
+        {
+          disabled: true,
+          style: {
+            background: 'rgba(0,0,0,0.2)',
+            overflow: 'hidden',
+            display: 'inline-block',
+            border: 0,
+            padding: 1,
+            textDecoration: 'none',
+            borderRadius: 5,
+            userSelect: 'none'
+          }
+        },
+        _react2.default.createElement(
+          'span',
+          {
+            style: {
+              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.25)',
+              fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
+              fontSize: 14,
+              position: 'relative',
+              padding: '0 12px',
+              display: 'block',
+              height: 30,
+              lineHeight: '30px',
+              borderRadius: 4,
+              color: '#999',
+              background: '#f8f9fa',
+              textShadow: '0 1px 0 rgba(255,255,255,0.5)'
+            }
+          },
+          this.props.label
+        )
+      );
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      if (this.props.desktopShowModal === true && !this.state.open) {
+        this.onClick();
+      } else if (this.props.desktopShowModal === false && this.state.open) {
+        ReactStripeCheckout.stripeHandler.close();
+      }
+
+      var ComponentClass = this.props.ComponentClass;
+
+      if (this.props.children) {
+        return _react2.default.createElement(ComponentClass, _extends({}, _defineProperty({}, this.props.triggerEvent, this.onClick), {
+          children: this.props.children
+        }));
+      }
+      return this.props.disabled ? this.renderDisabledButton() : this.renderDefaultStripeButton();
+    }
+  }]);
+
+  return ReactStripeCheckout;
+}(_react2.default.Component);
+
+ReactStripeCheckout.defaultProps = {
+  className: 'StripeCheckout',
+  label: 'Pay With Card',
+  locale: 'auto',
+  ComponentClass: 'span',
+  reconfigureOnUpdate: false,
+  triggerEvent: 'onClick'
+};
+ReactStripeCheckout.propTypes = {
+  // Opens / closes the checkout modal by value
+  // WARNING: does not work on mobile due to browser security restrictions
+  // NOTE: Must be set to false when receiving token to prevent modal from
+  //       opening automatically after closing
+  desktopShowModal: _propTypes2.default.bool,
+
+  triggerEvent: _propTypes2.default.oneOf(['onClick', 'onTouchTap', 'onTouchStart']),
+
+  // If included, will render the default blue button with label text.
+  // (Requires including stripe-checkout.css or adding the .styl file
+  // to your pipeline)
+  label: _propTypes2.default.string,
+
+  // Custom styling for default button
+  style: _propTypes2.default.object,
+  // Custom styling for <span> tag inside default button
+  textStyle: _propTypes2.default.object,
+
+  // Prevents any events from opening the popup
+  // Adds the disabled prop to the button and adjusts the styling as well
+  disabled: _propTypes2.default.bool,
+
+  // Named component to wrap button (eg. div)
+  ComponentClass: _propTypes2.default.string,
+
+  // Show a loading indicator
+  showLoadingDialog: _propTypes2.default.func,
+  // Hide the loading indicator
+  hideLoadingDialog: _propTypes2.default.func,
+
+  // Run this method when the scrupt fails to load. Will run if the internet
+  // connection is offline when attemting to load the script.
+  onScriptError: _propTypes2.default.func,
+
+  // Runs when the script tag is created, but before it is added to the DOM
+  onScriptTagCreated: _propTypes2.default.func,
+
+  // By default, any time the React component is updated, it will call
+  // StripeCheckout.configure, which may result in additional XHR calls to the
+  // stripe API.  If you know the first configuration is all you need, you
+  // can set this to false.  Subsequent updates will affect the StripeCheckout.open
+  // (e.g. different prices)
+  reconfigureOnUpdate: _propTypes2.default.bool,
+
+  // =====================================================
+  // Required by stripe
+  // see Stripe docs for more info:
+  //   https://stripe.com/docs/checkout#integration-custom
+  // =====================================================
+
+  // Your publishable key (test or live).
+  // can't use "key" as a prop in react, so have to change the keyname
+  stripeKey: _propTypes2.default.string.isRequired,
+
+  // The callback to invoke when the Checkout process is complete.
+  //   function(token)
+  //     token is the token object created.
+  //     token.id can be used to create a charge or customer.
+  //     token.email contains the email address entered by the user.
+  token: _propTypes2.default.func.isRequired,
+
+  // ==========================
+  // Highly Recommended Options
+  // ==========================
+
+  // Name of the company or website.
+  name: _propTypes2.default.string,
+
+  // A description of the product or service being purchased.
+  description: _propTypes2.default.string,
+
+  // A relative URL pointing to a square image of your brand or product. The
+  // recommended minimum size is 128x128px. The recommended image types are
+  // .gif, .jpeg, and .png.
+  image: _propTypes2.default.string,
+
+  // The amount (in cents) that's shown to the user. Note that you will still
+  // have to explicitly include it when you create a charge using the API.
+  amount: _propTypes2.default.number,
+
+  // Specify auto to display Checkout in the user's preferred language, if
+  // available. English will be used by default.
+  //
+  // https://stripe.com/docs/checkout#supported-languages
+  // for more info.
+  locale: _propTypes2.default.oneOf(['auto', // (Default) Automatically chosen by checkout
+  'zh', // Simplified Chinese
+  'da', // Danish
+  'nl', // Dutch
+  'en', // English
+  'fr', // French
+  'de', // German
+  'it', // Italian
+  'ja', // Japanease
+  'no', // Norwegian
+  'es', // Spanish
+  'sv']),
+
+  // ==============
+  // Optional Props
+  // ==============
+
+  // The currency of the amount (3-letter ISO code). The default is USD.
+  currency: _propTypes2.default.oneOf(['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN', 'BAM', 'BBD', // eslint-disable-line comma-spacing
+  'BDT', 'BGN', 'BIF', 'BMD', 'BND', 'BOB', 'BRL', 'BSD', 'BWP', 'BZD', 'CAD', 'CDF', // eslint-disable-line comma-spacing
+  'CHF', 'CLP', 'CNY', 'COP', 'CRC', 'CVE', 'CZK', 'DJF', 'DKK', 'DOP', 'DZD', 'EEK', // eslint-disable-line comma-spacing
+  'EGP', 'ETB', 'EUR', 'FJD', 'FKP', 'GBP', 'GEL', 'GIP', 'GMD', 'GNF', 'GTQ', 'GYD', // eslint-disable-line comma-spacing
+  'HKD', 'HNL', 'HRK', 'HTG', 'HUF', 'IDR', 'ILS', 'INR', 'ISK', 'JMD', 'JPY', 'KES', // eslint-disable-line comma-spacing
+  'KGS', 'KHR', 'KMF', 'KRW', 'KYD', 'KZT', 'LAK', 'LBP', 'LKR', 'LRD', 'LSL', 'LTL', // eslint-disable-line comma-spacing
+  'LVL', 'MAD', 'MDL', 'MGA', 'MKD', 'MNT', 'MOP', 'MRO', 'MUR', 'MVR', 'MWK', 'MXN', // eslint-disable-line comma-spacing
+  'MYR', 'MZN', 'NAD', 'NGN', 'NIO', 'NOK', 'NPR', 'NZD', 'PAB', 'PEN', 'PGK', 'PHP', // eslint-disable-line comma-spacing
+  'PKR', 'PLN', 'PYG', 'QAR', 'RON', 'RSD', 'RUB', 'RWF', 'SAR', 'SBD', 'SCR', 'SEK', // eslint-disable-line comma-spacing
+  'SGD', 'SHP', 'SLL', 'SOS', 'SRD', 'STD', 'SVC', 'SZL', 'THB', 'TJS', 'TOP', 'TRY', // eslint-disable-line comma-spacing
+  'TTD', 'TWD', 'TZS', 'UAH', 'UGX', 'USD', 'UYU', 'UZS', 'VND', 'VUV', 'WST', 'XAF', // eslint-disable-line comma-spacing
+  'XCD', 'XOF', 'XPF', 'YER', 'ZAR', 'ZMW']),
+
+  // The label of the payment button in the Checkout form (e.g. “Subscribe”,
+  // “Pay {{amount}}”, etc.). If you include {{amount}}, it will be replaced
+  // by the provided amount. Otherwise, the amount will be appended to the
+  // end of your label.
+  panelLabel: _propTypes2.default.string,
+
+  // Specify whether Checkout should validate the billing ZIP code (true or
+  // false)
+  zipCode: _propTypes2.default.bool,
+
+  // Specify whether Checkout should collect the user's billing address
+  // (true or false). The default is false.
+  billingAddress: _propTypes2.default.bool,
+
+  // Specify whether Checkout should collect the user's shipping address
+  // (true or false). The default is false.
+  shippingAddress: _propTypes2.default.bool,
+
+  // Specify whether Checkout should validate the billing ZIP code (true or
+  // false). The default is false.
+  email: _propTypes2.default.string,
+
+  // Specify whether to include the option to "Remember Me" for future
+  // purchases (true or false). The default is true.
+  allowRememberMe: _propTypes2.default.bool,
+
+  // Specify whether to accept Bitcoin in Checkout. The default is false.
+  bitcoin: _propTypes2.default.bool,
+
+  // Specify whether to accept Alipay ('auto', true, or false). The default
+  // is false.
+  alipay: _propTypes2.default.oneOf(['auto', true, false]),
+
+  // Specify if you need reusable access to the customer's Alipay account
+  // (true or false). The default is false.
+  alipayReusable: _propTypes2.default.bool,
+
+  // function() The callback to invoke when Checkout is opened (not supported
+  // in IE6 and IE7).
+  opened: _propTypes2.default.func,
+
+  // function() The callback to invoke when Checkout is closed (not supported
+  // in IE6 and IE7).
+  closed: _propTypes2.default.func
+};
+ReactStripeCheckout._isMounted = false;
+exports.default = ReactStripeCheckout;
+
 
 /***/ }),
 
@@ -30464,7 +31715,7 @@ Table.Footer = __WEBPACK_IMPORTED_MODULE_9__TableFooter__["a" /* default */];
 Table.Header = __WEBPACK_IMPORTED_MODULE_10__TableHeader__["a" /* default */];
 Table.HeaderCell = __WEBPACK_IMPORTED_MODULE_11__TableHeaderCell__["a" /* default */];
 Table.Row = __WEBPACK_IMPORTED_MODULE_12__TableRow__["a" /* default */];
-/* unused harmony default export */ var _unused_webpack_default_export = (Table);
+/* harmony default export */ __webpack_exports__["a"] = (Table);
 
 /***/ }),
 
@@ -30914,7 +32165,7 @@ TableRow.create = Object(__WEBPACK_IMPORTED_MODULE_6__lib__["l" /* createShortha
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Table__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/Table.js");
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Table__["a"]; });
 
 
 
@@ -31897,7 +33148,7 @@ Header.propTypes =  true ? {
 } : {};
 Header.Content = __WEBPACK_IMPORTED_MODULE_9__HeaderContent__["a" /* default */];
 Header.Subheader = __WEBPACK_IMPORTED_MODULE_8__HeaderSubheader__["a" /* default */];
-/* unused harmony default export */ var _unused_webpack_default_export = (Header);
+/* harmony default export */ __webpack_exports__["a"] = (Header);
 
 /***/ }),
 
@@ -32015,7 +33266,7 @@ HeaderSubheader.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* create
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/Header.js");
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Header__["a"]; });
 
 
 
@@ -35113,7 +36364,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__collections_Grid_GridRow__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js");
 /* unused harmony reexport GridRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__collections_Menu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_29__collections_Menu__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_29__collections_Menu__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__collections_Menu_MenuHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js");
 /* unused harmony reexport MenuHeader */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__collections_Menu_MenuItem__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js");
@@ -35121,7 +36372,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__collections_Menu_MenuMenu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuMenu.js");
 /* unused harmony reexport MenuMenu */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__collections_Message__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_33__collections_Message__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_33__collections_Message__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__collections_Message_MessageContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js");
 /* unused harmony reexport MessageContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__collections_Message_MessageHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js");
@@ -35131,7 +36382,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__collections_Message_MessageList__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageList.js");
 /* unused harmony reexport MessageList */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__collections_Table__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/index.js");
-/* unused harmony reexport Table */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_38__collections_Table__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__collections_Table_TableBody__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/TableBody.js");
 /* unused harmony reexport TableBody */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__collections_Table_TableCell__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/TableCell.js");
@@ -35159,7 +36410,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__elements_Flag__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Flag/index.js");
 /* unused harmony reexport Flag */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__elements_Header__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/index.js");
-/* unused harmony reexport Header */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_52__elements_Header__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__elements_Header_HeaderContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/HeaderContent.js");
 /* unused harmony reexport HeaderContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__elements_Header_HeaderSubheader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/HeaderSubheader.js");
@@ -35169,13 +36420,13 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__elements_Icon_IconGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Icon/IconGroup.js");
 /* unused harmony reexport IconGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__elements_Image__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Image/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_57__elements_Image__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_57__elements_Image__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__elements_Image_ImageGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js");
 /* unused harmony reexport ImageGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__elements_Input__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Input/index.js");
-/* unused harmony reexport Input */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_59__elements_Input__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__elements_Label__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Label/index.js");
-/* unused harmony reexport Label */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_60__elements_Label__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__elements_Label_LabelDetail__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Label/LabelDetail.js");
 /* unused harmony reexport LabelDetail */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__elements_Label_LabelGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Label/LabelGroup.js");
@@ -35195,7 +36446,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__elements_List_ListList__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/List/ListList.js");
 /* unused harmony reexport ListList */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__elements_Loader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Loader/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_70__elements_Loader__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_70__elements_Loader__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__elements_Rail__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Rail/index.js");
 /* unused harmony reexport Rail */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__elements_Reveal__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Reveal/index.js");
@@ -35203,7 +36454,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__elements_Reveal_RevealContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Reveal/RevealContent.js");
 /* unused harmony reexport RevealContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__elements_Segment__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Segment/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_74__elements_Segment__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_74__elements_Segment__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__elements_Segment_SegmentGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentGroup.js");
 /* unused harmony reexport SegmentGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__elements_Step__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Step/index.js");
@@ -35347,7 +36598,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_145__views_Feed_FeedUser__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Feed/FeedUser.js");
 /* unused harmony reexport FeedUser */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_146__views_Item__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Item/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_146__views_Item__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_146__views_Item__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_147__views_Item_ItemContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Item/ItemContent.js");
 /* unused harmony reexport ItemContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_148__views_Item_ItemDescription__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Item/ItemDescription.js");
@@ -52928,7 +54179,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-throw new Error("Cannot find module \"../components/layout\"");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__("./components/Layout.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_CartItemList__ = __webpack_require__("./components/CartItemList.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_CartSummary__ = __webpack_require__("./components/CartSummary.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_moltin__ = __webpack_require__("./lib/moltin.js");
@@ -53070,7 +54321,7 @@ function (_React$Component) {
                 case 0:
                   cartId = _this.state.cartId;
                   _context2.next = 3;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["e" /* removeFromCart */])(itemId, cartId);
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["f" /* removeFromCart */])(itemId, cartId);
 
                 case 3:
                   _ref3 = _context2.sent;
@@ -53115,7 +54366,7 @@ function (_React$Component) {
               case 2:
                 cartId = _context3.sent;
                 _context3.next = 5;
-                return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["b" /* getCartItems */])(cartId);
+                return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["c" /* getCartItems */])(cartId);
 
               case 5:
                 _ref4 = _context3.sent;
@@ -53148,7 +54399,7 @@ function (_React$Component) {
           rest = _objectWithoutProperties(_state, ["meta"]);
 
       var loading = rest.loading;
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout___default.a, {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */], {
         title: "Cart",
         __source: {
           fileName: _jsxFileName,

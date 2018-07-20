@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import CartItemList from '../components/CartItemList'
 import CartSummary from '../components/CartSummary'
 import { getCartItems, removeFromCart, checkoutCart, payForOrder } from '../lib/moltin'

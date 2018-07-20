@@ -577,11 +577,11 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return getProducts; });
+/* unused harmony export getProducts */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getProductById; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addToCart; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getCartItems; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return removeFromCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return removeFromCart; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk__ = __webpack_require__("@moltin/sdk");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__moltin_sdk__);
 

@@ -1,6 +1,8 @@
 import StripeCheckout from 'react-stripe-checkout'
 import {Button, Segment, Divider} from 'semantic-ui-react'
 
+const stripeKey = 'pk_test_TQFCOtxleoeIjE9QXzRL9Xla'
+
 export default ({
     display_price: {with_tax: {currency, amount, formatted}}}) => (
         <React.Fragment>
@@ -8,9 +10,22 @@ export default ({
 
             <Segment clearing size='large'>
             <strong>Sub Total:</strong> {formatted}
+            <StripeCheckout
+            name="Personafi Marketplace"
+            amount={amount}
+            currency={currency}
+            stripeKey={stripeKey}
+            shippingAddress={false}
+            billingAddress={true}
+            zipCode={true}
+            token={handleCheckout}
+            reconfigureOnUpdate={false}
+            triggerEvent="onClick"
+            >
             <Button color='black' floated='right'>
             Check Out
             </Button>
+            </StripeCheckout>
             </Segment>
         </React.Fragment>
     )

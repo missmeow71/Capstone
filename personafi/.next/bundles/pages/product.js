@@ -376,44 +376,44 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
       fileName: _jsxFileName,
       lineNumber: 11
     }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["l" /* Table */], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["m" /* Table */], {
     celled: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["l" /* Table */].Header, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["m" /* Table */].Header, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["l" /* Table */].Row, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["m" /* Table */].Row, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["l" /* Table */].HeaderCell, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["m" /* Table */].HeaderCell, {
     colSpan: "2",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     }
-  }, "Personality Sample"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["l" /* Table */].Body, {
+  }, "Personality Sample"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["m" /* Table */].Body, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["l" /* Table */].Row, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["m" /* Table */].Row, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["l" /* Table */].Cell, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["m" /* Table */].Cell, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
     }
-  }, "Sample"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["l" /* Table */].Cell, {
+  }, "Sample"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["m" /* Table */].Cell, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -503,11 +503,11 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return getProducts; });
+/* unused harmony export getProducts */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getProductById; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addToCart; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getCartItems; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return removeFromCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return removeFromCart; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk__ = __webpack_require__("./node_modules/@moltin/sdk/dist/moltin.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__moltin_sdk__);
 
@@ -35337,7 +35337,7 @@ SegmentGroup.propTypes =  true ? {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Segment__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Segment/Segment.js");
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Segment__["a"]; });
 
 
 
@@ -35962,7 +35962,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__collections_Message_MessageList__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageList.js");
 /* unused harmony reexport MessageList */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__collections_Table__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_38__collections_Table__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_38__collections_Table__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__collections_Table_TableBody__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/TableBody.js");
 /* unused harmony reexport TableBody */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__collections_Table_TableCell__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/TableCell.js");
@@ -36034,7 +36034,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__elements_Reveal_RevealContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Reveal/RevealContent.js");
 /* unused harmony reexport RevealContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__elements_Segment__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Segment/index.js");
-/* unused harmony reexport Segment */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_74__elements_Segment__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__elements_Segment_SegmentGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentGroup.js");
 /* unused harmony reexport SegmentGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__elements_Step__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Step/index.js");

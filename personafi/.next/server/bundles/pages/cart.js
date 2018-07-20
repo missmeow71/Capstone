@@ -196,13 +196,15 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-throw new Error("Cannot find module \"react-stripe-checkout\"");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout__ = __webpack_require__("react-stripe-checkout");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__);
 var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/CartSummary.js";
 
 
 
+var stripeKey = 'pk_test_TQFCOtxleoeIjE9QXzRL9Xla';
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
   var _ref$display_price$wi = _ref.display_price.with_tax,
       currency = _ref$display_price$wi.currency,
@@ -211,33 +213,237 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["Divider"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["Segment"], {
     clearing: true,
     size: "large",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     }
-  }, "Sub Total:"), " ", formatted, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["Button"], {
+  }, "Sub Total:"), " ", formatted, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout___default.a, {
+    name: "Personafi Marketplace",
+    amount: amount,
+    currency: currency,
+    stripeKey: stripeKey,
+    shippingAddress: false,
+    billingAddress: true,
+    zipCode: true,
+    token: handleCheckout,
+    reconfigureOnUpdate: false,
+    triggerEvent: "onClick",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["Button"], {
     color: "black",
     floated: "right",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 25
+    }
+  }, "Check Out"))));
+});
+
+/***/ }),
+
+/***/ "./components/Header.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("next/link");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head__ = __webpack_require__("next/head");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router__ = __webpack_require__("next/router");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_router__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_nprogress__ = __webpack_require__("nprogress");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_nprogress___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_nprogress__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__);
+var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Header.js";
+
+
+
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeStart = function (url) {
+  return __WEBPACK_IMPORTED_MODULE_4_nprogress___default.a.start();
+};
+
+__WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeComplete = function (url) {
+  return __WEBPACK_IMPORTED_MODULE_4_nprogress___default.a.done();
+};
+
+__WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = function (url) {
+  return __WEBPACK_IMPORTED_MODULE_4_nprogress___default.a.done();
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_head___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
+    rel: "stylesheet",
+    type: "text/css",
+    href: "/static/nprogress.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"], {
+    inverted: true,
+    fixed: "top",
+    size: "huge",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Container"], {
+    text: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+    href: "/",
+    prefetch: true,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"].Item, {
+    as: "a",
+    header: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Image"], {
+    size: "mini",
+    src: "/static/amazon-artificial-intelligence.svg",
+    style: {
+      marginRight: '1.5em'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }), "Personafi Marketplace")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+    href: "/cart",
+    prefetch: true,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"].Item, {
+    position: "right",
+    as: "a",
+    header: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    }
+  }, "Cart")))));
+});
+
+/***/ }),
+
+/***/ "./components/Layout.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head__ = __webpack_require__("next/head");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_head__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__("./components/Header.js");
+var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Layout.js";
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
+  var children = _ref.children,
+      _ref$title = _ref.title,
+      title = _ref$title === void 0 ? '' : _ref$title;
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
+    charSet: "utf-8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
+    rel: "stylesheet",
+    href: "//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 11
     }
-  }, "Check Out")));
+  }, title)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Header__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["Container"], {
+    text: true,
+    style: {
+      paddingTop: '7em'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, children));
 });
 
 /***/ }),
@@ -246,11 +452,11 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getProducts; });
-/* unused harmony export getProductById */
-/* unused harmony export addToCart */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
+/* unused harmony export getProducts */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getProductById; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addToCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getCartItems; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return removeFromCart; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk__ = __webpack_require__("@moltin/sdk");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__moltin_sdk__);
 
@@ -285,7 +491,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-throw new Error("Cannot find module \"../components/layout\"");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__("./components/Layout.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_CartItemList__ = __webpack_require__("./components/CartItemList.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_CartSummary__ = __webpack_require__("./components/CartSummary.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_moltin__ = __webpack_require__("./lib/moltin.js");
@@ -427,7 +633,7 @@ function (_React$Component) {
                 case 0:
                   cartId = _this.state.cartId;
                   _context2.next = 3;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["e" /* removeFromCart */])(itemId, cartId);
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["f" /* removeFromCart */])(itemId, cartId);
 
                 case 3:
                   _ref3 = _context2.sent;
@@ -472,7 +678,7 @@ function (_React$Component) {
               case 2:
                 cartId = _context3.sent;
                 _context3.next = 5;
-                return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["b" /* getCartItems */])(cartId);
+                return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["c" /* getCartItems */])(cartId);
 
               case 5:
                 _ref4 = _context3.sent;
@@ -505,7 +711,7 @@ function (_React$Component) {
           rest = _objectWithoutProperties(_state, ["meta"]);
 
       var loading = rest.loading;
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout___default.a, {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */], {
         title: "Cart",
         __source: {
           fileName: _jsxFileName,
@@ -556,6 +762,13 @@ module.exports = require("@moltin/sdk");
 
 /***/ }),
 
+/***/ "next/head":
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
 /***/ "next/link":
 /***/ (function(module, exports) {
 
@@ -563,10 +776,31 @@ module.exports = require("next/link");
 
 /***/ }),
 
+/***/ "next/router":
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "nprogress":
+/***/ (function(module, exports) {
+
+module.exports = require("nprogress");
+
+/***/ }),
+
 /***/ "react":
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-stripe-checkout":
+/***/ (function(module, exports) {
+
+module.exports = require("react-stripe-checkout");
 
 /***/ }),
 
