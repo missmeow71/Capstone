@@ -32,6 +32,12 @@ export default () => (
         </Menu.Item>
     </Link>
 
+     <Link href='/login' prefetch passHref>
+        <Menu.Item as='a' >
+            Sign In
+        </Menu.Item>
+      </Link>
+
     
 
     <Link href="/cart" prefetch passHref>

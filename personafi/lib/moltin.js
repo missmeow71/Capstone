@@ -43,3 +43,11 @@ export const register = async ({email, password, ...rest}) => {
     token
   }
 }
+
+export const login = async ({email, password}) => {
+  const {data: {token} } = await Moltin.Customers.Token(email, password)
+
+  return {
+    token
+  }
+}
