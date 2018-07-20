@@ -25,6 +25,12 @@ export default () => (
     Personafi Marketplace
     </Menu.Item>
     </Link>
+
+    <Link href="/cart" prefetch passHref>
+    <Menu.Item position='right' as='a' header>
+        Cart
+    </Menu.Item>
+    </Link>
     </Container>
     </Menu>
     </React.Fragment>

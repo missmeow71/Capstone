@@ -166,7 +166,23 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       fileName: _jsxFileName,
       lineNumber: 20
     }
-  }), "Personafi Marketplace")))));
+  }), "Personafi Marketplace")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+    href: "/cart",
+    prefetch: true,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"].Item, {
+    position: "right",
+    as: "a",
+    header: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    }
+  }, "Cart")))));
 });
 
 /***/ }),
@@ -323,8 +339,11 @@ var mapProductsToItems = function mapProductsToItems(products) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getProducts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getProducts; });
 /* unused harmony export getProductById */
+/* unused harmony export addToCart */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk__ = __webpack_require__("@moltin/sdk");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__moltin_sdk__);
 
@@ -336,6 +355,15 @@ var getProducts = function getProducts() {
 };
 var getProductById = function getProductById(id) {
   return Moltin.Products.With('main_image').Get(id);
+};
+var addToCart = function addToCart(productId, quantity) {
+  return Moltin.Cart().AddProduct(productId, quantity);
+};
+var getCartItems = function getCartItems(id) {
+  return Moltin.Cart(id).Items();
+};
+var removeFromCart = function removeFromCart(itemId, cartId) {
+  return Moltin.Cart(cartId).RemoveItem(itemId);
 };
 
 /***/ }),
@@ -395,7 +423,7 @@ __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return Object(__WEBPACK_IMPORTED_MODULE_2__lib_moltin__["a" /* getProducts */])();
+          return Object(__WEBPACK_IMPORTED_MODULE_2__lib_moltin__["c" /* getProducts */])();
 
         case 2:
           _ref2 = _context.sent;
