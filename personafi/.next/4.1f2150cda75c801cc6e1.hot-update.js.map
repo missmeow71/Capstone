@@ -1,1 +1,0 @@
-{"version":3,"file":"4.1f2150cda75c801cc6e1.hot-update.js","sources":["webpack:///components/AddToCart.js"],"sourcesContent":["import {Input, Button, Label} from 'semantic-ui-react'\nimport {addToCart} from '../lib/moltin'\n\n\n// WEBPACK FOOTER //\n// components/AddToCart.js"],"mappings":";;;;;;AAAA;AAAA;AAAA;;;;;A","sourceRoot":""}

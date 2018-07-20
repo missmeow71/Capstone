@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -293,15 +293,15 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Layo
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export getProducts */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getProducts; });
 /* unused harmony export getProductById */
 /* unused harmony export addToCart */
-/* unused harmony export getCartItems */
-/* unused harmony export removeFromCart */
-/* unused harmony export checkoutCart */
-/* unused harmony export payForOrder */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return register; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return login; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return removeFromCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return checkoutCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return payForOrder; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return login; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("@babel/runtime/regenerator");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__moltin_sdk__ = __webpack_require__("@moltin/sdk");
@@ -531,7 +531,7 @@ function (_React$Component) {
 
                   _context.prev = 3;
                   _context.next = 6;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["b" /* register */])({
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["f" /* register */])({
                     name: name,
                     email: email,
                     password: password
@@ -690,7 +690,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/register.js");
