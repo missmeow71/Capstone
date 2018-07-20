@@ -16,20 +16,28 @@ export default () => (
     <Menu inverted fixed="top" size="huge">
     <Container text>
     <Link href="/" prefetch passHref>
-    <Menu.Item as ='a' header>
+        <Menu.Item as ='a' header>
     <Image
         size="mini"
         src="/static/amazon-artificial-intelligence.svg"
         style={{ marginRight: '1.5em'}}
-    />
-    Personafi Marketplace
-    </Menu.Item>
+        />
+            Personafi Marketplace
+        </Menu.Item>
     </Link>
 
+    <Link href='/register' prefetch passHref>
+        <Menu.Item as='a' >
+            Sign Up
+        </Menu.Item>
+    </Link>
+
+    
+
     <Link href="/cart" prefetch passHref>
-    <Menu.Item position='right' as='a' header>
-        Cart
-    </Menu.Item>
+        <Menu.Item position='right' as='a' header>
+            Cart
+        </Menu.Item>
     </Link>
     </Container>
     </Menu>

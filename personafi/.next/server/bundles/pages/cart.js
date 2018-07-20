@@ -354,7 +354,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       lineNumber: 20
     }
   }), "Personafi Marketplace")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/cart",
+    href: "/register",
     prefetch: true,
     passHref: true,
     __source: {
@@ -362,12 +362,26 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       lineNumber: 29
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"].Item, {
+    as: "a",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    }
+  }, "Sign Up")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+    href: "/cart",
+    prefetch: true,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"].Item, {
     position: "right",
     as: "a",
     header: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 38
     }
   }, "Cart")))));
 });
@@ -452,15 +466,30 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Layo
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export getProducts */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getProductById; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addToCart; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getCartItems; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return removeFromCart; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk__ = __webpack_require__("@moltin/sdk");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__moltin_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__moltin_sdk__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getProducts; });
+/* unused harmony export getProductById */
+/* unused harmony export addToCart */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return checkoutCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return payForOrder; });
+/* unused harmony export register */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("@babel/runtime/regenerator");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__moltin_sdk__ = __webpack_require__("@moltin/sdk");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__moltin_sdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__moltin_sdk__);
 
-var Moltin = Object(__WEBPACK_IMPORTED_MODULE_0__moltin_sdk__["gateway"])({
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } } function _next(value) { step("next", value); } function _throw(err) { step("throw", err); } _next(); }); }; }
+
+
+var Moltin = Object(__WEBPACK_IMPORTED_MODULE_1__moltin_sdk__["gateway"])({
   client_id: 'TkrDPNqfC1j7AJFFUHnMZbN9RzPygkff3beqMhxQsl'
 });
 var getProducts = function getProducts() {
@@ -478,6 +507,72 @@ var getCartItems = function getCartItems(id) {
 var removeFromCart = function removeFromCart(itemId, cartId) {
   return Moltin.Cart(cartId).RemoveItem(itemId);
 };
+var checkoutCart = function checkoutCart(cartId, customer, billing) {
+  return Moltin.Cart(cartId).Checkout(customer, billing);
+};
+var payForOrder = function payForOrder(orderId, token, email) {
+  return Moltin.Orders.Payment(orderId, {
+    gateway: 'stripe',
+    method: 'purchase',
+    payment: token,
+    options: {
+      receipt_email: email
+    }
+  });
+};
+var register =
+/*#__PURE__*/
+function () {
+  var _ref2 = _asyncToGenerator(
+  /*#__PURE__*/
+  __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee(_ref) {
+    var email, password, rest, _ref3, _ref3$data, name, id, _ref4, token;
+
+    return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            email = _ref.email, password = _ref.password, rest = _objectWithoutProperties(_ref, ["email", "password"]);
+            _context.next = 3;
+            return Moltin.Customers.Create(_objectSpread({
+              type: 'customer',
+              email: email,
+              password: password
+            }, rest));
+
+          case 3:
+            _ref3 = _context.sent;
+            _ref3$data = _ref3.data;
+            name = _ref3$data.name;
+            id = _ref3$data.id;
+            _context.next = 9;
+            return login({
+              email: email,
+              password: password
+            });
+
+          case 9:
+            _ref4 = _context.sent;
+            token = _ref4.token;
+            return _context.abrupt("return", {
+              id: id,
+              name: name,
+              email: email,
+              token: token
+            });
+
+          case 12:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, this);
+  }));
+
+  return function register(_x) {
+    return _ref2.apply(this, arguments);
+  };
+}();
 
 /***/ }),
 
@@ -584,13 +679,13 @@ function (_React$Component) {
                   };
                   _context.prev = 6;
                   _context.next = 9;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["checkoutCart"])(cartId, customer, address);
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["a" /* checkoutCart */])(cartId, customer, address);
 
                 case 9:
                   _ref2 = _context.sent;
                   id = _ref2.data.id;
                   _context.next = 13;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["payForOrder"])(id, token, email);
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["d" /* payForOrder */])(id, token, email);
 
                 case 13:
                   _this.setState({
@@ -633,7 +728,7 @@ function (_React$Component) {
                 case 0:
                   cartId = _this.state.cartId;
                   _context2.next = 3;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["f" /* removeFromCart */])(itemId, cartId);
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["e" /* removeFromCart */])(itemId, cartId);
 
                 case 3:
                   _ref3 = _context2.sent;
@@ -678,7 +773,7 @@ function (_React$Component) {
               case 2:
                 cartId = _context3.sent;
                 _context3.next = 5;
-                return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["c" /* getCartItems */])(cartId);
+                return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["b" /* getCartItems */])(cartId);
 
               case 5:
                 _ref4 = _context3.sent;
