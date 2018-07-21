@@ -1,7 +1,7 @@
 import StripeCheckout from 'react-stripe-checkout'
 import {Button, Segment, Divider} from 'semantic-ui-react'
 
-const stripeKey = 'pk_test_TQFCOtxleoeIjE9QXzRL9Xla'
+const stripeKey = 'pk_test_UBWSVyq6rmqp2x0bEwVQiicn'
 
 export default ({
     display_price: {with_tax: {currency, amount, formatted}}}) => (

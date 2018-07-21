@@ -204,7 +204,7 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
 
 
 
-var stripeKey = 'pk_test_TQFCOtxleoeIjE9QXzRL9Xla';
+var stripeKey = 'pk_test_UBWSVyq6rmqp2x0bEwVQiicn';
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
   var _ref$display_price$wi = _ref.display_price.with_tax,
       currency = _ref$display_price$wi.currency,
@@ -484,11 +484,11 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Layo
 /* unused harmony export getProductById */
 /* unused harmony export addToCart */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return removeFromCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return checkoutCart; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return payForOrder; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return register; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return login; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return payForOrder; });
+/* unused harmony export register */
+/* unused harmony export login */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("@babel/runtime/regenerator");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__moltin_sdk__ = __webpack_require__("@moltin/sdk");
@@ -735,7 +735,7 @@ function (_React$Component) {
                   _ref2 = _context.sent;
                   id = _ref2.data.id;
                   _context.next = 13;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["e" /* payForOrder */])(id, token, email);
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["d" /* payForOrder */])(id, token, email);
 
                 case 13:
                   _this.setState({
@@ -778,7 +778,7 @@ function (_React$Component) {
                 case 0:
                   cartId = _this.state.cartId;
                   _context2.next = 3;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["g" /* removeFromCart */])(itemId, cartId);
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["e" /* removeFromCart */])(itemId, cartId);
 
                 case 3:
                   _ref3 = _context2.sent;
