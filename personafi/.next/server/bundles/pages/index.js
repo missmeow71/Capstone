@@ -543,12 +543,12 @@ var Home = function Home(props) {
     title: "Home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     }
   }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_ProductList__["a" /* default */], _extends({}, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     }
   })));
 };

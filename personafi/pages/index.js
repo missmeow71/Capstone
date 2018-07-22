@@ -2,6 +2,7 @@ import {getProducts} from '../lib/moltin'
 import Layout from '../components/Layout'
 import ProductList from '../components/ProductList'
 
+
 const Home = props => (
   <Layout title="Home">
     <ProductList {...props} />
@@ -23,7 +24,6 @@ Home.getInitialProps = async () => {
           : '/static/amazon-artificial-intelligence.svg'
       }
   })
-
 
   return {
     products
