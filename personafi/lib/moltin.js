@@ -16,14 +16,14 @@ export const removeFromCart = (itemId, cartId) => Moltin.Cart(cartId).RemoveItem
 
 export const checkoutCart = (cartId, customer, billing) => Moltin.Cart(cartId).Checkout(customer, billing)
 
-export const payForOrder = (orderId, token, email) => Moltin.Orders.Payment(orderId, {
-  gateway: 'stripe',
-  method: 'purchase',
-  payment: token,
-  options: {
-    receipt_email: email
-  }
-})
+// export const payForOrder = (orderId, token, email) => Moltin.Orders.Payment(orderId, {
+//   gateway: 'stripe',
+//   method: 'purchase',
+//   payment: token,
+//   options: {
+//     receipt_email: email
+//   }
+// })
 
 export const register = async ({email, password, ...rest}) => {
   const {

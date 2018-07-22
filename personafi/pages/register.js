@@ -79,7 +79,7 @@ export default class Register extends React.Component {
                 onChange={e => this._handleChange(e)}
                 />
             </Form.Field>
-            <Button type='submit' color='black'>
+            <Button type='submit' color='orange'>
               Register
             </Button>
 

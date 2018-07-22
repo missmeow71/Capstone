@@ -373,7 +373,6 @@ var mapProductsToItems = function mapProductsToItems(products) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return checkoutCart; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return payForOrder; });
 /* unused harmony export register */
 /* unused harmony export login */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("@babel/runtime/regenerator");
@@ -411,17 +410,15 @@ var removeFromCart = function removeFromCart(itemId, cartId) {
 };
 var checkoutCart = function checkoutCart(cartId, customer, billing) {
   return Moltin.Cart(cartId).Checkout(customer, billing);
-};
-var payForOrder = function payForOrder(orderId, token, email) {
-  return Moltin.Orders.Payment(orderId, {
-    gateway: 'stripe',
-    method: 'purchase',
-    payment: token,
-    options: {
-      receipt_email: email
-    }
-  });
-};
+}; // export const payForOrder = (orderId, token, email) => Moltin.Orders.Payment(orderId, {
+//   gateway: 'stripe',
+//   method: 'purchase',
+//   payment: token,
+//   options: {
+//     receipt_email: email
+//   }
+// })
+
 var register =
 /*#__PURE__*/
 function () {

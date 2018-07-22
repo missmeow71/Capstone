@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -196,15 +196,13 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Cart
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout__ = __webpack_require__("react-stripe-checkout");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
 var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/CartSummary.js";
 
+// import StripeCheckout from 'react-stripe-checkout'
+ // const stripeKey = 'pk_test_UBWSVyq6rmqp2x0bEwVQiicn'
 
-
-var stripeKey = 'pk_test_UBWSVyq6rmqp2x0bEwVQiicn';
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
   var _ref$display_price$wi = _ref.display_price.with_tax,
       currency = _ref$display_price$wi.currency,
@@ -215,12 +213,12 @@ var stripeKey = 'pk_test_UBWSVyq6rmqp2x0bEwVQiicn';
       fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["Divider"], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Divider"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["Segment"], {
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Segment"], {
     clearing: true,
     size: "large",
     __source: {
@@ -232,29 +230,14 @@ var stripeKey = 'pk_test_UBWSVyq6rmqp2x0bEwVQiicn';
       fileName: _jsxFileName,
       lineNumber: 12
     }
-  }, "Sub Total:"), " ", formatted, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_stripe_checkout___default.a, {
-    name: "Personafi Marketplace",
-    amount: amount,
-    currency: currency,
-    stripeKey: stripeKey,
-    shippingAddress: false,
-    billingAddress: true,
-    zipCode: true,
-    token: handleCheckout,
-    reconfigureOnUpdate: false,
-    triggerEvent: "onClick",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["Button"], {
-    color: "black",
+  }, "Sub Total:"), " ", formatted, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Button"], {
+    color: "orange",
     floated: "right",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     }
-  }, "Check Out"))));
+  }, "Check Out")));
 });
 
 /***/ }),
@@ -486,7 +469,6 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Layo
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return checkoutCart; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return payForOrder; });
 /* unused harmony export register */
 /* unused harmony export login */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("@babel/runtime/regenerator");
@@ -524,17 +506,15 @@ var removeFromCart = function removeFromCart(itemId, cartId) {
 };
 var checkoutCart = function checkoutCart(cartId, customer, billing) {
   return Moltin.Cart(cartId).Checkout(customer, billing);
-};
-var payForOrder = function payForOrder(orderId, token, email) {
-  return Moltin.Orders.Payment(orderId, {
-    gateway: 'stripe',
-    method: 'purchase',
-    payment: token,
-    options: {
-      receipt_email: email
-    }
-  });
-};
+}; // export const payForOrder = (orderId, token, email) => Moltin.Orders.Payment(orderId, {
+//   gateway: 'stripe',
+//   method: 'purchase',
+//   payment: token,
+//   options: {
+//     receipt_email: email
+//   }
+// })
+
 var register =
 /*#__PURE__*/
 function () {
@@ -735,7 +715,7 @@ function (_React$Component) {
                   _ref2 = _context.sent;
                   id = _ref2.data.id;
                   _context.next = 13;
-                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["d" /* payForOrder */])(id, token, email);
+                  return Object(__WEBPACK_IMPORTED_MODULE_5__lib_moltin__["payForOrder"])(id, token, email);
 
                 case 13:
                   _this.setState({
@@ -885,7 +865,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/cart.js");
@@ -939,13 +919,6 @@ module.exports = require("nprogress");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
-
-/***/ }),
-
-/***/ "react-stripe-checkout":
-/***/ (function(module, exports) {
-
-module.exports = require("react-stripe-checkout");
 
 /***/ }),
 
