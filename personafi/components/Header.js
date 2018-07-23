@@ -20,22 +20,21 @@ export default () => (
     <Image
         height= "75"
         width= "115"
-        // size= "small"
-        src="/static/tree.png"
-        style={{ marginRight: '1.5em'}}
+        src="/static/logo-wht.png"
+        style={{ marginRight: '.1em'}}
         />
-        Personafi 
         </Menu.Item>
     </Link>
 
+
     <Link href='/register' prefetch passHref>
-        <Menu.Item as='a' >
+        <Menu.Item position='right' as='a' >
             Sign Up
         </Menu.Item>
     </Link>
 
      <Link href='/login' prefetch passHref>
-        <Menu.Item as='a' >
+        <Menu.Item position='right' as='a' >
             Sign In
         </Menu.Item>
       </Link>
