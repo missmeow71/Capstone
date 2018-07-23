@@ -157,8 +157,8 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       lineNumber: 19
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Image"], {
-    size: "mini",
-    src: "/static/amazon-artificial-intelligence.svg",
+    size: "small",
+    src: "/static/logo.png",
     style: {
       marginRight: '1.5em'
     },
@@ -166,19 +166,19 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       fileName: _jsxFileName,
       lineNumber: 20
     }
-  }), "Personafi Marketplace")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+  }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
     href: "/register",
     prefetch: true,
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 28
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"].Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     }
   }, "Sign Up")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
     href: "/login",
@@ -186,13 +186,13 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"].Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     }
   }, "Sign In")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
     href: "/cart",
@@ -200,7 +200,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["Menu"].Item, {
     position: "right",
@@ -208,7 +208,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
     header: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 43
     }
   }, "Cart")))));
 });

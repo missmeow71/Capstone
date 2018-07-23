@@ -18,11 +18,10 @@ export default () => (
     <Link href="/" prefetch passHref>
         <Menu.Item as ='a' header>
     <Image
-        size="mini"
-        src="/static/amazon-artificial-intelligence.svg"
+        size="small"
+        src="/static/logo.png"
         style={{ marginRight: '1.5em'}}
         />
-            Personafi Marketplace
         </Menu.Item>
     </Link>
 
