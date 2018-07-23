@@ -18,10 +18,13 @@ export default () => (
     <Link href="/" prefetch passHref>
         <Menu.Item as ='a' header>
     <Image
-        size="small"
-        src="/static/logo.png"
+        height= "75"
+        width= "115"
+        // size= "small"
+        src="/static/tree.png"
         style={{ marginRight: '1.5em'}}
         />
+        Personafi 
         </Menu.Item>
     </Link>
 
