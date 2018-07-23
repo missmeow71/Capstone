@@ -371,11 +371,12 @@ var mapProductsToItems = function mapProductsToItems(products) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getProducts; });
-/* unused harmony export getProductById */
-/* unused harmony export addToCart */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return checkoutCart; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getProductById; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addToCart; });
+/* unused harmony export getCartItems */
+/* unused harmony export removeFromCart */
+/* unused harmony export checkoutCart */
+/* unused harmony export payForOrder */
 /* unused harmony export register */
 /* unused harmony export login */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("@babel/runtime/regenerator");
@@ -413,15 +414,17 @@ var removeFromCart = function removeFromCart(itemId, cartId) {
 };
 var checkoutCart = function checkoutCart(cartId, customer, billing) {
   return Moltin.Cart(cartId).Checkout(customer, billing);
-}; // export const payForOrder = (orderId, token, email) => Moltin.Orders.Payment(orderId, {
-//   gateway: 'stripe',
-//   method: 'purchase',
-//   payment: token,
-//   options: {
-//     receipt_email: email
-//   }
-// })
-
+};
+var payForOrder = function payForOrder(orderId, token, email) {
+  return Moltin.Orders.Payment(orderId, {
+    gateway: 'stripe',
+    method: 'purchase',
+    payment: token,
+    options: {
+      receipt_email: email
+    }
+  });
+};
 var register =
 /*#__PURE__*/
 function () {
