@@ -17,7 +17,7 @@ export default ({children, title = ''}) => (
         background-image:  linear-gradient(
         rgba(148, 143, 145, 0.20),
         rgba(148, 143, 145, 0.20)
-        ),url('https://previews.123rf.com/images/mik38/mik381603/mik38160300221/54903955-3d-render-vaisseau-spatial-futuriste-int%C3%A9rieur-couloir.jpg');
+        ),url('/static/spaceship-interior.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;

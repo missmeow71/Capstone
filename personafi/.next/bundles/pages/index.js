@@ -57,7 +57,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       fileName: _jsxFileName,
       lineNumber: 14
     }
-  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["g" /* Menu */], {
+  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["h" /* Menu */], {
     inverted: true,
     fixed: "top",
     size: "huge",
@@ -65,7 +65,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       fileName: _jsxFileName,
       lineNumber: 16
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["b" /* Container */], {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["a" /* Container */], {
     text: true,
     __source: {
       fileName: _jsxFileName,
@@ -79,7 +79,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       fileName: _jsxFileName,
       lineNumber: 18
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["g" /* Menu */].Item, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["h" /* Menu */].Item, {
     as: "a",
     header: true,
     __source: {
@@ -105,7 +105,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       fileName: _jsxFileName,
       lineNumber: 30
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["g" /* Menu */].Item, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["h" /* Menu */].Item, {
     position: "right",
     as: "a",
     __source: {
@@ -120,7 +120,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       fileName: _jsxFileName,
       lineNumber: 36
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["g" /* Menu */].Item, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["h" /* Menu */].Item, {
     position: "right",
     as: "a",
     __source: {
@@ -135,7 +135,7 @@ __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.onRouteChangeError = functio
       fileName: _jsxFileName,
       lineNumber: 44
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["g" /* Menu */].Item, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_semantic_ui_react__["h" /* Menu */].Item, {
     position: "right",
     as: "a",
     header: true,
@@ -187,14 +187,14 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Layo
       fileName: _jsxFileName,
       lineNumber: 8
     },
-    className: "jsx-2286589157"
+    className: "jsx-3423888287"
   }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
     charSet: "utf-8",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
-    className: "jsx-2286589157"
+    className: "jsx-3423888287"
   }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("link", {
     rel: "stylesheet",
     href: "//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css",
@@ -202,22 +202,22 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Layo
       fileName: _jsxFileName,
       lineNumber: 10
     },
-    className: "jsx-2286589157"
+    className: "jsx-3423888287"
   }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
-    className: "jsx-2286589157"
+    className: "jsx-3423888287"
   }, title)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Header__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     }
   }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-    styleId: "2286589157",
-    css: "body{background-image:linear-gradient( rgba(148,143,145,0.20), rgba(148,143,145,0.20) ),url('https://previews.123rf.com/images/mik38/mik381603/mik38160300221/54903955-3d-render-vaisseau-spatial-futuriste-int%C3%A9rieur-couloir.jpg');background-size:cover;background-repeat:no-repeat;background-attachment:fixed;height:100vh;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWN3QixBQU0ySixvT0FDNUgsc0JBQ00sNEJBQ0EsNEJBQ2YsYUFDZiIsImZpbGUiOiJjb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvbWlzc21lb3cvRG9jdW1lbnRzL0NhcHN0b25lL3BlcnNvbmFmaSIsInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJ1xuaW1wb3J0IHtDb250YWluZXJ9IGZyb20gJ3NlbWFudGljLXVpLXJlYWN0J1xuaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcidcbmV4cG9ydCBkZWZhdWx0ICh7Y2hpbGRyZW4sIHRpdGxlID0gJyd9KSA9PiAoXG4gIDxSZWFjdC5GcmFnbWVudD5cbiAgICA8SGVhZD5cbiAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTFcIiAvPlxuICAgICAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCIvL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9zZW1hbnRpYy11aS8yLjIuMi9zZW1hbnRpYy5taW4uY3NzXCIvPlxuICAgICAgICAgIDx0aXRsZT57dGl0bGV9PC90aXRsZT5cbiAgICA8L0hlYWQ+XG5cbiAgICA8SGVhZGVyIC8+XG4gICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBib2R5IHsgXG4gICAgICAgIGJhY2tncm91bmQtaW1hZ2U6ICBsaW5lYXItZ3JhZGllbnQoXG4gICAgICAgIHJnYmEoMTQ4LCAxNDMsIDE0NSwgMC4yMCksXG4gICAgICAgIHJnYmEoMTQ4LCAxNDMsIDE0NSwgMC4yMClcbiAgICAgICAgKSx1cmwoJ2h0dHBzOi8vcHJldmlld3MuMTIzcmYuY29tL2ltYWdlcy9taWszOC9taWszODE2MDMvbWlrMzgxNjAzMDAyMjEvNTQ5MDM5NTUtM2QtcmVuZGVyLXZhaXNzZWF1LXNwYXRpYWwtZnV0dXJpc3RlLWludCVDMyVBOXJpZXVyLWNvdWxvaXIuanBnJyk7XG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgICAgIGJhY2tncm91bmQtYXR0YWNobWVudDogZml4ZWQ7XG4gICAgICAgIGhlaWdodDogMTAwdmg7ICBcbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG5cbiAgICA8Q29udGFpbmVyIHRleHQgc3R5bGUgPXt7cGFkZGluZ1RvcDogJzdlbSd9fT5cbiAgICAgIHtjaGlsZHJlbn1cbiAgICA8L0NvbnRhaW5lcj5cbiAgPC9SZWFjdC5GcmFnbWVudD5cbikiXX0= */\n/*@ sourceURL=components/Layout.js */"
-  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Container */], {
+    styleId: "3423888287",
+    css: "body{background-image:linear-gradient( rgba(148,143,145,0.20), rgba(148,143,145,0.20) ),url('/static/spaceship-interior.jpg');background-size:cover;background-repeat:no-repeat;background-attachment:fixed;height:100vh;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWN3QixBQU1nRCx5SEFDakIsc0JBQ00sNEJBQ0EsNEJBQ2YsYUFDZiIsImZpbGUiOiJjb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvbWlzc21lb3cvRG9jdW1lbnRzL0NhcHN0b25lL3BlcnNvbmFmaSIsInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJ1xuaW1wb3J0IHtDb250YWluZXJ9IGZyb20gJ3NlbWFudGljLXVpLXJlYWN0J1xuaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcidcbmV4cG9ydCBkZWZhdWx0ICh7Y2hpbGRyZW4sIHRpdGxlID0gJyd9KSA9PiAoXG4gIDxSZWFjdC5GcmFnbWVudD5cbiAgICA8SGVhZD5cbiAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTFcIiAvPlxuICAgICAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCIvL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9zZW1hbnRpYy11aS8yLjIuMi9zZW1hbnRpYy5taW4uY3NzXCIvPlxuICAgICAgICAgIDx0aXRsZT57dGl0bGV9PC90aXRsZT5cbiAgICA8L0hlYWQ+XG5cbiAgICA8SGVhZGVyIC8+XG4gICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBib2R5IHsgXG4gICAgICAgIGJhY2tncm91bmQtaW1hZ2U6ICBsaW5lYXItZ3JhZGllbnQoXG4gICAgICAgIHJnYmEoMTQ4LCAxNDMsIDE0NSwgMC4yMCksXG4gICAgICAgIHJnYmEoMTQ4LCAxNDMsIDE0NSwgMC4yMClcbiAgICAgICAgKSx1cmwoJy9zdGF0aWMvc3BhY2VzaGlwLWludGVyaW9yLmpwZycpO1xuICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgICAgICBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGZpeGVkO1xuICAgICAgICBoZWlnaHQ6IDEwMHZoOyAgXG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuXG4gICAgPENvbnRhaW5lciB0ZXh0IHN0eWxlID17e3BhZGRpbmdUb3A6ICc3ZW0nfX0+XG4gICAgICB7Y2hpbGRyZW59XG4gICAgPC9Db250YWluZXI+XG4gIDwvUmVhY3QuRnJhZ21lbnQ+XG4pIl19 */\n/*@ sourceURL=components/Layout.js */"
+  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Container */], {
     text: true,
     style: {
       paddingTop: '7em'
@@ -262,7 +262,7 @@ var mapProductsToItems = function mapProductsToItems(products) {
           fileName: _jsxFileName,
           lineNumber: 10
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Item */].Image, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Item */].Image, {
         size: "small",
         src: image,
         as: "a",
@@ -278,7 +278,7 @@ var mapProductsToItems = function mapProductsToItems(products) {
           fileName: _jsxFileName,
           lineNumber: 15
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Item */].Header, {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Item */].Header, {
         as: "a",
         __source: {
           fileName: _jsxFileName,
@@ -293,7 +293,7 @@ var mapProductsToItems = function mapProductsToItems(products) {
 
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref2) {
   var products = _ref2.products;
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["e" /* Item */].Group, {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_semantic_ui_react__["f" /* Item */].Group, {
     items: mapProductsToItems(products),
     __source: {
       fileName: _jsxFileName,
@@ -309,12 +309,12 @@ var mapProductsToItems = function mapProductsToItems(products) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getProducts; });
-/* unused harmony export getProductById */
-/* unused harmony export addToCart */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCartItems; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return removeFromCart; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return checkoutCart; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return payForOrder; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getProductById; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addToCart; });
+/* unused harmony export getCartItems */
+/* unused harmony export removeFromCart */
+/* unused harmony export checkoutCart */
+/* unused harmony export payForOrder */
 /* unused harmony export register */
 /* unused harmony export login */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("./node_modules/@babel/runtime/regenerator/index.js");
@@ -30903,7 +30903,7 @@ MenuMenu.propTypes =  true ? {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Message; });
+/* unused harmony export default */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_extends__ = __webpack_require__("./node_modules/semantic-ui-react/node_modules/@babel/runtime/helpers/extends.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_extends__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__babel_runtime_helpers_classCallCheck__ = __webpack_require__("./node_modules/semantic-ui-react/node_modules/@babel/runtime/helpers/classCallCheck.js");
@@ -31360,7 +31360,7 @@ MessageList.create = Object(__WEBPACK_IMPORTED_MODULE_5__lib__["l" /* createShor
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Message__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/Message.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Message__["a"]; });
+/* unused harmony reexport default */
 
 
 
@@ -31558,7 +31558,7 @@ Table.Footer = __WEBPACK_IMPORTED_MODULE_9__TableFooter__["a" /* default */];
 Table.Header = __WEBPACK_IMPORTED_MODULE_10__TableHeader__["a" /* default */];
 Table.HeaderCell = __WEBPACK_IMPORTED_MODULE_11__TableHeaderCell__["a" /* default */];
 Table.Row = __WEBPACK_IMPORTED_MODULE_12__TableRow__["a" /* default */];
-/* unused harmony default export */ var _unused_webpack_default_export = (Table);
+/* harmony default export */ __webpack_exports__["a"] = (Table);
 
 /***/ }),
 
@@ -32008,7 +32008,7 @@ TableRow.create = Object(__WEBPACK_IMPORTED_MODULE_6__lib__["l" /* createShortha
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Table__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/Table.js");
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Table__["a"]; });
 
 
 
@@ -32991,7 +32991,7 @@ Header.propTypes =  true ? {
 } : {};
 Header.Content = __WEBPACK_IMPORTED_MODULE_9__HeaderContent__["a" /* default */];
 Header.Subheader = __WEBPACK_IMPORTED_MODULE_8__HeaderSubheader__["a" /* default */];
-/* unused harmony default export */ var _unused_webpack_default_export = (Header);
+/* harmony default export */ __webpack_exports__["a"] = (Header);
 
 /***/ }),
 
@@ -33109,7 +33109,7 @@ HeaderSubheader.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* create
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/Header.js");
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Header__["a"]; });
 
 
 
@@ -35135,7 +35135,7 @@ Loader.propTypes =  true ? {
   /** Loaders can have different sizes. */
   size: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.oneOf(__WEBPACK_IMPORTED_MODULE_4__lib__["b" /* SUI */].SIZES)
 } : {};
-/* harmony default export */ __webpack_exports__["a"] = (Loader);
+/* unused harmony default export */ var _unused_webpack_default_export = (Loader);
 
 /***/ }),
 
@@ -35144,7 +35144,7 @@ Loader.propTypes =  true ? {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Loader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Loader/Loader.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Loader__["a"]; });
+/* unused harmony reexport default */
 
 
 
@@ -35600,7 +35600,7 @@ SegmentGroup.propTypes =  true ? {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Segment__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Segment/Segment.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Segment__["a"]; });
+/* unused harmony reexport default */
 
 
 
@@ -36207,7 +36207,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__collections_Grid_GridRow__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js");
 /* unused harmony reexport GridRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__collections_Menu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_29__collections_Menu__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_29__collections_Menu__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__collections_Menu_MenuHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js");
 /* unused harmony reexport MenuHeader */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__collections_Menu_MenuItem__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js");
@@ -36215,7 +36215,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__collections_Menu_MenuMenu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuMenu.js");
 /* unused harmony reexport MenuMenu */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__collections_Message__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_33__collections_Message__["a"]; });
+/* unused harmony reexport Message */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__collections_Message_MessageContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js");
 /* unused harmony reexport MessageContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__collections_Message_MessageHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js");
@@ -36225,7 +36225,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__collections_Message_MessageList__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageList.js");
 /* unused harmony reexport MessageList */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__collections_Table__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/index.js");
-/* unused harmony reexport Table */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_38__collections_Table__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__collections_Table_TableBody__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/TableBody.js");
 /* unused harmony reexport TableBody */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__collections_Table_TableCell__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/TableCell.js");
@@ -36239,7 +36239,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__collections_Table_TableRow__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Table/TableRow.js");
 /* unused harmony reexport TableRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/Button.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_45__elements_Button_Button__["a"]; });
+/* unused harmony reexport Button */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__elements_Button_ButtonContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/ButtonContent.js");
 /* unused harmony reexport ButtonContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__elements_Button_ButtonGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/ButtonGroup.js");
@@ -36247,13 +36247,13 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__elements_Button_ButtonOr__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/ButtonOr.js");
 /* unused harmony reexport ButtonOr */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__elements_Container__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Container/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_49__elements_Container__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_49__elements_Container__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__elements_Divider__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Divider/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_50__elements_Divider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_50__elements_Divider__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__elements_Flag__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Flag/index.js");
 /* unused harmony reexport Flag */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__elements_Header__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/index.js");
-/* unused harmony reexport Header */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_52__elements_Header__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__elements_Header_HeaderContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/HeaderContent.js");
 /* unused harmony reexport HeaderContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__elements_Header_HeaderSubheader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Header/HeaderSubheader.js");
@@ -36267,9 +36267,9 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__elements_Image_ImageGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js");
 /* unused harmony reexport ImageGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__elements_Input__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Input/index.js");
-/* unused harmony reexport Input */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_59__elements_Input__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__elements_Label__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Label/index.js");
-/* unused harmony reexport Label */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_60__elements_Label__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__elements_Label_LabelDetail__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Label/LabelDetail.js");
 /* unused harmony reexport LabelDetail */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__elements_Label_LabelGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Label/LabelGroup.js");
@@ -36289,7 +36289,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__elements_List_ListList__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/List/ListList.js");
 /* unused harmony reexport ListList */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__elements_Loader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Loader/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_70__elements_Loader__["a"]; });
+/* unused harmony reexport Loader */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__elements_Rail__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Rail/index.js");
 /* unused harmony reexport Rail */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__elements_Reveal__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Reveal/index.js");
@@ -36297,7 +36297,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__elements_Reveal_RevealContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Reveal/RevealContent.js");
 /* unused harmony reexport RevealContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__elements_Segment__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Segment/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_74__elements_Segment__["a"]; });
+/* unused harmony reexport Segment */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__elements_Segment_SegmentGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Segment/SegmentGroup.js");
 /* unused harmony reexport SegmentGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__elements_Step__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Step/index.js");
@@ -36441,7 +36441,7 @@ StepTitle.create = Object(__WEBPACK_IMPORTED_MODULE_4__lib__["l" /* createShorth
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_145__views_Feed_FeedUser__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Feed/FeedUser.js");
 /* unused harmony reexport FeedUser */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_146__views_Item__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Item/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_146__views_Item__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_146__views_Item__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_147__views_Item_ItemContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Item/ItemContent.js");
 /* unused harmony reexport ItemContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_148__views_Item_ItemDescription__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Item/ItemDescription.js");
