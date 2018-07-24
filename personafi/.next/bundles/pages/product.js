@@ -385,7 +385,7 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
 
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
   var description = _ref.description,
-      Sample = _ref.Sample;
+      s3_url = _ref.s3_url;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
@@ -444,12 +444,12 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
       fileName: _jsxFileName,
       lineNumber: 22
     }
-  }, "Sample"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["i" /* Table */].Cell, {
+  }, "s3_url"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["i" /* Table */].Cell, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     }
-  }, Sample)))));
+  }, s3_url)))));
 });
 
 /***/ }),
@@ -471,7 +471,8 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
       image = _ref.image,
       name = _ref.name,
       meta = _ref.meta,
-      sku = _ref.sku;
+      sku = _ref.sku,
+      s3_url = _ref.s3_url;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["f" /* Item */].Group, {
     __source: {
       fileName: _jsxFileName,

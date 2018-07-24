@@ -2,7 +2,7 @@ import {Item, Label} from 'semantic-ui-react'
 
 import AddToCart from './AddToCart'
 
-export default ({ id, image, name, meta, sku }) => (
+export default ({ id, image, name, meta, sku, s3_url }) => (
     <Item.Group>
     <Item>
       <Item.Image size="medium" src={image} />

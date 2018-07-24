@@ -1,8 +1,8 @@
-import {Header, Divider, Table} from 'semantic-ui-react'
+import {Header, Divider, Table, Icon} from 'semantic-ui-react'
 
 export default ({
   description,
-  Sample
+  s3_url
 }) => (
   <React.Fragment>
     <Header as='h3'>About this personality</Header>
@@ -19,8 +19,8 @@ export default ({
 
       <Table.Body>
         <Table.Row>
-          <Table.Cell>Sample</Table.Cell>
-          <Table.Cell>{Sample}</Table.Cell>
+          <Table.Cell>s3_url</Table.Cell>
+           <Table.Cell>{s3_url}</Table.Cell>
         </Table.Row>
       </Table.Body>
     </Table>
