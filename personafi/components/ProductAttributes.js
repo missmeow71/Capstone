@@ -19,8 +19,7 @@ export default ({
 
       <Table.Body>
         <Table.Row>
-          <Table.Cell>s3_url</Table.Cell>
-           <Table.Cell>{s3_url}</Table.Cell>
+           <Table.Cell><audio target='blank' controls src={s3_url}>link to file</audio></Table.Cell>
         </Table.Row>
       </Table.Body>
     </Table>

@@ -21,7 +21,7 @@ Home.getInitialProps = async () => {
       return {
           ...product,
           image: imageId ? main_images.find(img => img.id === imageId).link.href 
-          : '/static/amazon-artificial-intelligence.svg'
+          : '/static/logo-wht.png'
       }
   })
 

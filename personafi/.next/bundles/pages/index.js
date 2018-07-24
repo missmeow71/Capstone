@@ -297,7 +297,7 @@ var mapProductsToItems = function mapProductsToItems(products) {
     items: mapProductsToItems(products),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     }
   });
 });
@@ -54782,7 +54782,7 @@ __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function
             return _objectSpread({}, product, {
               image: imageId ? main_images.find(function (img) {
                 return img.id === imageId;
-              }).link.href : '/static/amazon-artificial-intelligence.svg'
+              }).link.href : '/static/logo-wht.png'
             });
           });
           return _context.abrupt("return", {

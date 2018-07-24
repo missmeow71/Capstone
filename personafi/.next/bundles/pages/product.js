@@ -454,12 +454,15 @@ var _jsxFileName = "/Users/missmeow/Documents/Capstone/personafi/components/Prod
       fileName: _jsxFileName,
       lineNumber: 22
     }
-  }, "s3_url"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["i" /* Table */].Cell, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("audio", {
+    target: "blank",
+    controls: true,
+    src: s3_url,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     }
-  }, s3_url)))));
+  }, "link to file"))))));
 });
 
 /***/ }),
@@ -55028,7 +55031,7 @@ function () {
               product: _objectSpread({}, data, {
                 image: imageId ? main_images.find(function (img) {
                   return img.id === imageId;
-                }).link.href : '/static/amazon-artificial-intelligence.svg'
+                }).link.href : '/static/logo-wht.png'
               })
             });
 

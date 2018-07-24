@@ -22,6 +22,7 @@ const mapProductsToItems = products => products.map(({id, name, image, descripti
 })
 
 
+
 export default ({ products }) => (
   <Item.Group items={mapProductsToItems(products)} />
 )
