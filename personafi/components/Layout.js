@@ -12,7 +12,7 @@ export default ({children, title = ''}) => (
     </Head>
 
     <Header />
-     <style jsx global>{`
+     {/* <style jsx global>{`
       body { 
         background-image:  linear-gradient(
         rgba(148, 143, 145, 0.20),
@@ -23,7 +23,7 @@ export default ({children, title = ''}) => (
         background-attachment: fixed;
         height: 100vh;  
       }
-    `}</style>
+    `}</style> */}
 
     <Container text style ={{paddingTop: '7em'}}>
       {children}
