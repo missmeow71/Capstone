@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 17);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -395,14 +395,18 @@ module.exports = require("@moltin/sdk");
 /* 10 */,
 /* 11 */,
 /* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(14);
+module.exports = __webpack_require__(18);
 
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -416,62 +420,186 @@ var regenerator__default = /*#__PURE__*/__webpack_require__.n(regenerator_);
 var external__react_ = __webpack_require__(0);
 var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
 
-// EXTERNAL MODULE: ./lib/moltin.js
-var moltin = __webpack_require__(6);
-
 // EXTERNAL MODULE: ./components/Layout.js + 1 modules
 var Layout = __webpack_require__(7);
 
-// EXTERNAL MODULE: external "next/link"
-var link_ = __webpack_require__(4);
-var link__default = /*#__PURE__*/__webpack_require__.n(link_);
+// EXTERNAL MODULE: ./lib/moltin.js
+var moltin = __webpack_require__(6);
 
 // EXTERNAL MODULE: external "semantic-ui-react"
 var external__semantic_ui_react_ = __webpack_require__(1);
 var external__semantic_ui_react__default = /*#__PURE__*/__webpack_require__.n(external__semantic_ui_react_);
 
-// CONCATENATED MODULE: ./components/ProductList.js
+// CONCATENATED MODULE: ./components/AddToCart.js
+
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } } function _next(value) { step("next", value); } function _throw(err) { step("throw", err); } _next(); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 
 
 
-var ProductList_mapProductsToItems = function mapProductsToItems(products) {
-  return products.map(function (_ref) {
-    var id = _ref.id,
-        name = _ref.name,
-        image = _ref.image,
-        description = _ref.description,
-        meta = _ref.meta;
-    var price = meta.display_price.with_tax.formatted || null;
-    return {
-      childKey: id,
-      image: external__react__default.a.createElement(link__default.a, {
-        href: "/product?id=".concat(id),
-        passHref: true
-      }, external__react__default.a.createElement(external__semantic_ui_react_["Item"].Image, {
-        size: "small",
-        src: image,
-        as: "a"
-      })),
-      header: external__react__default.a.createElement(link__default.a, {
-        href: "/product?id=".concat(id),
-        passHref: true
-      }, external__react__default.a.createElement(external__semantic_ui_react_["Item"].Header, {
-        as: "a"
-      }, name)),
-      description: description,
-      meta: price
-    };
-  });
-};
+var AddToCart_AddToCart =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(AddToCart, _React$Component);
 
-/* harmony default export */ var ProductList = (function (_ref2) {
-  var products = _ref2.products;
-  return external__react__default.a.createElement(external__semantic_ui_react_["Item"].Group, {
-    items: ProductList_mapProductsToItems(products)
-  });
+  function AddToCart() {
+    var _ref;
+
+    var _temp, _this;
+
+    _classCallCheck(this, AddToCart);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = AddToCart.__proto__ || Object.getPrototypeOf(AddToCart)).call.apply(_ref, [this].concat(args))), Object.defineProperty(_assertThisInitialized(_this), "state", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: {
+        loading: false,
+        quantity: 1
+      }
+    }), Object.defineProperty(_assertThisInitialized(_this), "_handleSubmit", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function () {
+        var _value = _asyncToGenerator(
+        /*#__PURE__*/
+        regenerator__default.a.mark(function _callee() {
+          var productId, quantity, cart;
+          return regenerator__default.a.wrap(function _callee$(_context) {
+            while (1) {
+              switch (_context.prev = _context.next) {
+                case 0:
+                  productId = _this.props.productId;
+                  quantity = _this.state.quantity;
+
+                  _this.setState({
+                    loading: true
+                  });
+
+                  _context.next = 5;
+                  return Object(moltin["a" /* addToCart */])(productId, quantity);
+
+                case 5:
+                  cart = _context.sent;
+
+                  _this.setState({
+                    loading: false,
+                    quantity: 1
+                  });
+
+                case 7:
+                case "end":
+                  return _context.stop();
+              }
+            }
+          }, _callee, this);
+        }));
+
+        return function value() {
+          return _value.apply(this, arguments);
+        };
+      }()
+    }), Object.defineProperty(_assertThisInitialized(_this), "_handleChange", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function value(_ref2) {
+        var _value2 = _ref2.target.value;
+        return _this.setState({
+          quantity: _value2
+        });
+      }
+    }), _temp));
+  }
+
+  _createClass(AddToCart, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _state = this.state,
+          loading = _state.loading,
+          quantity = _state.quantity;
+      return external__react__default.a.createElement(external__semantic_ui_react_["Input"], {
+        type: "number",
+        placeholder: "Quantity",
+        value: quantity,
+        onChange: function onChange(e) {
+          return _this2._handleChange(e);
+        },
+        action: {
+          color: 'orange',
+          content: 'Add to Cart',
+          icon: 'plus cart',
+          onClick: this._handleSubmit,
+          loading: loading,
+          disabled: loading
+        }
+      });
+    }
+  }]);
+
+  return AddToCart;
+}(external__react__default.a.Component);
+
+
+// CONCATENATED MODULE: ./components/ProductSummary.js
+
+
+
+/* harmony default export */ var ProductSummary = (function (_ref) {
+  var id = _ref.id,
+      image = _ref.image,
+      name = _ref.name,
+      meta = _ref.meta,
+      sku = _ref.sku;
+  return external__react__default.a.createElement(external__semantic_ui_react_["Item"].Group, null, external__react__default.a.createElement(external__semantic_ui_react_["Item"], null, external__react__default.a.createElement(external__semantic_ui_react_["Item"].Image, {
+    size: "medium",
+    src: image
+  }), external__react__default.a.createElement(external__semantic_ui_react_["Item"].Content, null, external__react__default.a.createElement(external__semantic_ui_react_["Item"].Header, null, name), external__react__default.a.createElement(external__semantic_ui_react_["Item"].Description, null, external__react__default.a.createElement("p", null, meta.display_price.with_tax.formatted), external__react__default.a.createElement(external__semantic_ui_react_["Label"], null, "SKU: ", sku)), external__react__default.a.createElement(external__semantic_ui_react_["Item"].Extra, null, external__react__default.a.createElement(AddToCart_AddToCart, {
+    productId: id
+  })))));
 });
-// CONCATENATED MODULE: ./pages/index.js
+// CONCATENATED MODULE: ./components/ProductAttributes.js
+
+
+/* harmony default export */ var ProductAttributes = (function (_ref) {
+  var description = _ref.description,
+      s3_url = _ref.s3_url;
+  return external__react__default.a.createElement(external__react__default.a.Fragment, null, external__react__default.a.createElement(external__semantic_ui_react_["Header"], {
+    as: "h3"
+  }, "About this personality"), external__react__default.a.createElement("p", null, description), external__react__default.a.createElement(external__semantic_ui_react_["Divider"], null), external__react__default.a.createElement(external__semantic_ui_react_["Table"], {
+    celled: true
+  }, external__react__default.a.createElement(external__semantic_ui_react_["Table"].Header, null, external__react__default.a.createElement(external__semantic_ui_react_["Table"].Row, null, external__react__default.a.createElement(external__semantic_ui_react_["Table"].HeaderCell, {
+    colSpan: "2"
+  }, "Personality Sample"))), external__react__default.a.createElement(external__semantic_ui_react_["Table"].Body, null, external__react__default.a.createElement(external__semantic_ui_react_["Table"].Row, null, external__react__default.a.createElement(external__semantic_ui_react_["Table"].Cell, null, external__react__default.a.createElement("audio", {
+    target: "blank",
+    controls: true,
+    src: s3_url
+  }, "link to file"))))));
+});
+// CONCATENATED MODULE: ./pages/product.js
 
 
 
@@ -479,56 +607,63 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } } function _next(value) { step("next", value); } function _throw(err) { step("throw", err); } _next(); }); }; }
+function product__asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } } function _next(value) { step("next", value); } function _throw(err) { step("throw", err); } _next(); }); }; }
 
 
 
 
 
-var pages_Home = function Home(props) {
+
+var product_ProductPage = function ProductPage(_ref) {
+  var product = _ref.product;
   return external__react__default.a.createElement(Layout["a" /* default */], {
-    title: "Home"
-  }, external__react__default.a.createElement(ProductList, props));
+    title: product.name
+  }, external__react__default.a.createElement(ProductSummary, product), external__react__default.a.createElement(ProductAttributes, product));
 };
 
-pages_Home.getInitialProps =
+product_ProductPage.getInitialProps =
 /*#__PURE__*/
-_asyncToGenerator(
-/*#__PURE__*/
-regenerator__default.a.mark(function _callee() {
-  var _ref2, data, main_images, products;
+function () {
+  var _ref3 = product__asyncToGenerator(
+  /*#__PURE__*/
+  regenerator__default.a.mark(function _callee(_ref2) {
+    var id, _ref4, data, main_images, imageId;
 
-  return regenerator__default.a.wrap(function _callee$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _context.next = 2;
-          return Object(moltin["e" /* getProducts */])();
+    return regenerator__default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            id = _ref2.query.id;
+            _context.next = 3;
+            return Object(moltin["d" /* getProductById */])(id);
 
-        case 2:
-          _ref2 = _context.sent;
-          data = _ref2.data;
-          main_images = _ref2.included.main_images;
-          products = data.map(function (product) {
-            var imageId = product.relationships.main_image ? product.relationships.main_image.data.id : false;
-            return _objectSpread({}, product, {
-              image: imageId ? main_images.find(function (img) {
-                return img.id === imageId;
-              }).link.href : '/static/logo-wht.png'
+          case 3:
+            _ref4 = _context.sent;
+            data = _ref4.data;
+            main_images = _ref4.included.main_images;
+            imageId = data.relationships.main_image ? data.relationships.main_image.data.id : false;
+            return _context.abrupt("return", {
+              product: _objectSpread({}, data, {
+                image: imageId ? main_images.find(function (img) {
+                  return img.id === imageId;
+                }).link.href : '/static/logo-wht.png'
+              })
             });
-          });
-          return _context.abrupt("return", {
-            products: products
-          });
 
-        case 7:
-        case "end":
-          return _context.stop();
+          case 8:
+          case "end":
+            return _context.stop();
+        }
       }
-    }
-  }, _callee, this);
-}));
-/* harmony default export */ var pages = __webpack_exports__["default"] = (pages_Home);
+    }, _callee, this);
+  }));
+
+  return function (_x) {
+    return _ref3.apply(this, arguments);
+  };
+}();
+
+/* harmony default export */ var pages_product = __webpack_exports__["default"] = (product_ProductPage);
 
 /***/ })
 /******/ ]);
