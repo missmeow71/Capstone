@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-     "start": "next start -p $PORT"
+    "start": "next start -p $PORT"
   },
   "keywords": [],
   "author": "Sandy",
@@ -14,7 +14,7 @@
   "dependencies": {
     "@moltin/sdk": "3.12.1",
     "next": "6.1.1",
-    "npm": "^6.2.0",
+    "npm": "^6.9.0",
     "nprogress": "0.2.0",
     "react": "16.4.1",
     "react-dom": "16.4.1",
