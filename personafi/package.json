@@ -9,7 +9,6 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "root": "build/",
     "start": "next start -p $PORT"
   },
   "keywords": [],
