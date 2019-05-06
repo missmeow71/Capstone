@@ -1,31 +1,45 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_d6241b7832246e7b50d3.js"
-  ],
+  "devFiles": [],
   "pages": {
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.c94a21591e63051656b7.js",
+      "static/runtime/main-cab64f1d3815eaa2994c.js"
     ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.c94a21591e63051656b7.js",
+      "static/runtime/main-cab64f1d3815eaa2994c.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.c94a21591e63051656b7.js",
+      "static/runtime/main-cab64f1d3815eaa2994c.js"
     ],
     "/cart": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.c94a21591e63051656b7.js",
+      "static/runtime/main-cab64f1d3815eaa2994c.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.c94a21591e63051656b7.js",
+      "static/runtime/main-cab64f1d3815eaa2994c.js"
     ],
-    "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+    "/login": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.c94a21591e63051656b7.js",
+      "static/runtime/main-cab64f1d3815eaa2994c.js"
+    ],
+    "/product": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.c94a21591e63051656b7.js",
+      "static/runtime/main-cab64f1d3815eaa2994c.js"
+    ],
+    "/register": [
+      "static/runtime/webpack-a79426b5e11f0ba5879d.js",
+      "static/chunks/commons.c94a21591e63051656b7.js",
+      "static/runtime/main-cab64f1d3815eaa2994c.js"
     ]
   }
 }
