@@ -16,11 +16,11 @@
   "license": "ISC",
   "dependencies": {
     "@moltin/sdk": "3.20.0",
-    "next": "8.1.0",
+    "next": "^8.1.0",
     "npm": "^6.9.0",
     "nprogress": "0.2.0",
-    "react": "16.8.6",
-    "react-dom": "16.4.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-stripe-checkout": "^2.6.3",
     "semantic-ui-react": "0.82.0"
   }
