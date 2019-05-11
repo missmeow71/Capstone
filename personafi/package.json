@@ -7,9 +7,10 @@
     "node": "8.0.0"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start -p $PORT"
+    "dev": "node server.js",
+    "build": "./node_modules/next/dist/bin/next build",
+    "heroku-postbuild": "./node_modules/next/dist/bin/next build",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Sandy",
