@@ -8,7 +8,6 @@
   },
   "scripts": {
    "dev": "next",
-   "start": "next start -p 8000",
    "now-build": "next build && next export -o dist"
  },
   "keywords": [],
