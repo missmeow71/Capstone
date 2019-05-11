@@ -1,9 +1,10 @@
 module.exports = {
   target: 'serverless'
-},
-  config.node = {
-        fs: 'empty'
- };
-    
-
-
+}
+ 
+build: {
+     extend (config, { isDev, isClient}) 
+     {
+       config.node = { fs: 'empty'};
+      }
+     }
