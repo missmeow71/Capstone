@@ -1,8 +1,8 @@
 {
     "version": 2,
     "builds": [{
-    "src": "next.config.js",
-    "use": "@now/next"
+     "src": "package.json",
+     "use": "@now/next"
     }],
     "alias": ["my-zeit-website.com"]
 }
