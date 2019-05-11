@@ -2,7 +2,7 @@
   "name": "personafi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "/pages/index.js",
   "engines": {
     "node": "8.10.0"
   },
