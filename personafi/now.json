@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [{
      "src": "package.json",
-     "use": "@now/next"
+     "use": "@now/static-build"
     }],
     "alias": ["my-zeit-website.com"]
 }

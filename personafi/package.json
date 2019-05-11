@@ -8,8 +8,10 @@
   },
   "scripts": {
    "dev": "next",
-   "now-build": "next build"
-  },
+   "start": "next start -p 8000",
+   "build": "next build",
+   "now-build": "next build && next export -o dist"
+ },
   "keywords": [],
   "author": "Sandy",
   "license": "ISC",
