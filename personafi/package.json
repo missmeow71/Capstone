@@ -8,7 +8,8 @@
   },
   "scripts": {
    "dev": "next",
-   "now-build": "next build && next export -o dist"
+   "now-build": "NODE_ENV=production next build",
+   "now-export": "NODE_ENV=production next start"
  },
   "keywords": [],
   "author": "Sandy",
