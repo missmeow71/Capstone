@@ -8,8 +8,9 @@
   },
   "scripts": {
    "dev": "next",
-   "now-build": "next build && next export -o dist"
- },
+   "build": "next build",
+   "start": "next start -p $PORT"
+   },
   "keywords": [],
   "author": "Sandy",
   "license": "ISC",
