@@ -35,9 +35,7 @@ For local hosting run: npm run dev
 * [Next.js] - Page Routing
 * [React] - Single-Page-App
 * [Semantic UI React] - Styling
-* [Express] - Server
-* [PostgreSQL] - Database
-* [Knex] - Middleware Querying
+
  
 
 ## Authors
